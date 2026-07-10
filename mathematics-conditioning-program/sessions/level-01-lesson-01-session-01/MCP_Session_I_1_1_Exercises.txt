@@ -1,0 +1,217 @@
+MCP — Level I · Lesson I.1 · Session I.1.1
+Part 2 — Exercises
+George Kokkotas
+Energy 4 / Fatigue 1
+Theme: Mathematical Statements, Symbols, and Meaning
+
+Submit your attempts under this format:
+M1–M4 Mandatory Core
+R1–R4 Recommended
+S1–S3 Stretch
+RI1–RI2 Research Integration
+
+Rules:
+- Do not look for solutions before attempting.
+- Write reasoning, not only final answers.
+- If stuck, write exactly where the confusion begins.
+- Programming gaps are separate from math mistakes.
+
+MANDATORY CORE — 4 exercises
+
+M1 — Mathematical Language / Logic / L / Easy–Pre-Moderate
+For each item, classify it as:
+A) mathematical statement,
+B) mathematical expression,
+C) condition/predicate,
+D) non-mathematical subjective sentence.
+
+Items:
+1. x + 3 B
+No absolute truth value, thus x can be anything. 
+
+2. x + 3 = 10 A
+Since it is equal to 10, there's an absolute truth value, but x has to be defined, to be either TRUE or FALSE. 
+But it is a statement, since it basically says "some number plus 3 equals exactly 10".
+
+3. 7 > 2 A
+It is a statement. It has an absolute truth value, it holds TRUE and it states something very precisely and clearly: "7 IS larger than 3"
+
+4. x ∈ R A
+This is a statement. No debate, there is an absolute truth value, x has to be defined clearly before T of F is stated or proved, but it is a statement.
+x BELONGS in R! Also, can be a Condition.
+
+5. This function is elegant. D
+This is a personal opinion/commentary. Not a mathematical statement or expression.
+
+6. If x > 4, then x > 1. C
+Could be a predicate, could be a condition. If we say "for x to be less than 1, x ALSO has to be less than 4", it is a condition.
+If we say "if x is more than 4, then it is more than 1 TOO", that's a P => Q predicate and in this case it is TRUE. (Corrected)
+
+For every item, give one sentence explaining your classification.
+
+M2 — Implication Structure / Logic / D+L / Easy–Pre-Moderate
+For each implication, identify:
+- hypothesis P
+- conclusion Q
+- whether the implication seems true or false over R
+- if false, give one counterexample
+
+Implications:
+1. x > 5 ⇒ x > 0 TRUE
+2. x > 0 ⇒ x > 5 FALSE, Could be 4.999
+3. x = 2 ⇒ x² = 4 TRUE 
+4. x² = 4 ⇒ x = 2 FALSE, Could be x = -2
+Hypotheses/Assumptions (P(x)) are the equalities/inequalities before the "⇒" symbol.
+Conclusions (Q(x)) are the equalities inequalities after the "⇒" symbol. 
+
+M3 — Symbol Translation / Mathematical Language / L / Easy–Pre-Moderate
+Translate each sentence into symbols. Then identify the main mathematical relation used.
+
+Sentences:
+1. x is a real number. x ∈ R
+2. x is not equal to zero. x ≠ 0
+3. If x is greater than 3, then x is positive. x > 3 ⇒ x > 0
+4. y is the value of the function f at input x. y = f(x)
+5. a belongs to the set A, but b does not belong to A. a ∈ A, b ∉ A
+
+M4 — Function Language / Functions + Scientific Writing / L / Pre-Moderate
+Consider the function statement:
+
+f: R → R,   f(x) = 2x - 1
+
+Answer:
+1. What is the input variable?
+It is a real number
+
+2. What is the output expression?
+It is also a real number, that takes the x input and converts it to a y value defined by the function.
+
+3. What does f(3) mean in words?
+It means that, if we double 3 and subtract 1 from it, we'll get an (x,y) point of the f function that corresponds to our input. In this case (3, f(x)) = 5
+
+4. Is f(x)=2x-1 a statement, expression, rule, or equation? Defend your classification.
+It is not an equation. An equation has an exact value.
+It is not a rule, it is comprised of rules, but it isn't one.
+It is not an expression. It has a result.
+It is a statement. It states that, this function gives a specific y value for every x assigned to it.
+
+5. Write one clean scientific sentence describing what the function does.
+It takes an x value, doubles it, subtracts 1 and gives an (x, y) point in the chosen coordinate system.
+
+RECOMMENDED — 4 exercises
+
+R1 — Converse / Logic / L / Easy–Pre-Moderate
+For each implication, write its converse. Then decide whether the converse is true or false.
+
+1. x > 10 ⇒ x > 1
+2. x = 0 ⇒ x² = 0
+3. x = y ⇒ x + 2 = y + 2
+4. n is divisible by 6 ⇒ n is divisible by 3
+
+R2 — Domain Awareness / Sets + Functions / D+L / Pre-Moderate
+For each expression or function rule, state what restriction is needed for it to make sense over real numbers.
+
+1. 1/x, x ≠ 0
+2. sqrt(x), x ≥ 0
+3. ln(x), I am stuck
+4. 1/(x-2) x ≠ 2
+5. sqrt(x-5) x ∈ [5, +∞)
+
+For each, write the restriction in symbols and in words.
+
+R3 — Equality vs Implication / Proof Literacy / L / Pre-Moderate
+Explain the difference between these two lines:
+
+A) x = 3
+This is an equation. It can't be disputed in such form. x = 3.
+
+B) x > 5 ⇒ x > 3
+This is a predicate. We're assuming, and quite correctly here, that, since x is greater than 5, it is also greater than 3.
+
+= means EQUAL! If we're talking Truth values, we can start asking questions. But it means Equal. 
+This ⇒ on the other hand, is an implication. We're not sure, it's not definite.
+But we shouldn't confuse it with this ∴, though
+
+Your answer must include:
+1. what kind of mathematical object each line is,
+2. whether each can be true or false,
+3. why = and ⇒ cannot be used interchangeably.
+
+R4 — Programming Command Learning / C / Easy
+Write tiny Python-style commands that represent the following ideas:
+
+1. store x = 7
+x = 7
+2. test whether x > 3
+test = x > 3
+print(test)
+3. test whether x == 3
+test2 = x == 3
+print(test2)
+4. test whether x != 0
+test3 = x != 0
+print(test3)
+5. store the truth value of x > 3 in a variable named condition
+test_truth_value = test
+print(test)
+
+Do not run anything unless you want to. Just write the commands.
+
+STRETCH — 3 exercises
+
+S1 — Counterexample Construction / Logic / L / Moderate Probe
+For each false implication, give a counterexample and explain exactly why it destroys the implication.
+
+1. x² > 4 ⇒ x > 2
+2. x ≠ 0 ⇒ x > 0
+3. x² = y² ⇒ x = y
+
+S2 — Mini-Proof / Proof Methods / L / Moderate Probe
+Prove in complete mathematical sentences:
+
+If x > 3, then x + 2 > 5.
+
+Your proof must include:
+1. the starting assumption,
+2. the operation you perform on both sides,
+3. the conclusion,
+4. one sentence explaining why the step is legal.
+
+S3 — Statement Repair / Scientific Writing / L / Pre-Moderate
+Each sentence below is mathematically sloppy. Rewrite it precisely.
+
+1. x is bigger.
+2. The equation works.
+3. f is the same.
+4. The number is in the set.
+5. If it is positive, it is true.
+
+RESEARCH INTEGRATION — 2 exercises
+
+RI1 — Genomic Classification Logic / Mathematical Language + Research Writing / A / Pre-Moderate
+Consider the research-style implication:
+
+If variant V satisfies pathogenicity criteria C, then V belongs to the set P of clinically actionable variants.
+
+1. Write this implication symbolically.
+V ∈ C => V ∈ P  
+2. Identify the hypothesis.
+P: V ∈ C
+3. Identify the conclusion.
+Q: V ∈ P
+4. State one reason why the definition of C matters.
+Because we can't arbitrarily decide when a variant is pathogenic, unless we take serious considerations of what pathogenicity is in genomic science.
+5. State one reason why this is not yet a biological proof of causation.
+Pathogenicity doesn't mean you can do anything about it, nor a mathematical/logic formula can decide whether a variant is pathogenic, nor can we imply that, meeting the criteria is the same as being pathogenic. 
+
+RI2 — Archive / Scientific Communication / A / Easy–Pre-Moderate
+Create a 5-line Session Archive Note:
+
+1. Session title
+2. Three symbols learned today
+3. One distinction learned today
+4. One possible mistake to watch for
+5. One research connection
+
+END OF EXERCISES
+No solutions included.

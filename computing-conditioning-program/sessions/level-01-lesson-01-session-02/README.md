@@ -16,6 +16,8 @@ messy script → clean filename → exact variables → validation → readable 
 
 ## Files in this session
 
+- `CCP_L1_L1_S2_Part2_Exercises.txt` — full Part 2 exercise/submission file for Session 2.
+- `exercise_ccp_l1_les1_s2_code.py` — George's submitted Python script for Session 2.
 - `dna_sample_report.py` — corrected Python script for DNA sequence GC reporting.
 - `results.md` — final corrected Part 3 results, logs, grade, and archive.
 

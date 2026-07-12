@@ -16,9 +16,15 @@ Mathematical Object → Symbolic Language → Transformation → Proof / Check �
 
 ## Current Progress
 
-- Level I — Basic Mathematical Language and Symbolic Discipline
-- Lesson 1 — Mathematical Statements, Symbols, and Meaning
-- Session 1 — Mandatory Core passed
+Level I — Basic Mathematical Language and Symbolic Discipline
+Lesson I.1 — Mathematical Statements, Symbols, and Meaning
+
+Completed:
+- Session I.1.1 — Mandatory Core passed
+- Session I.1.2 — Passed; full 13/13 exercise coverage
+
+Next:
+- Session I.1.3 — Conditions, Domains, and Truth Sets
 
 ## Rule Summary
 

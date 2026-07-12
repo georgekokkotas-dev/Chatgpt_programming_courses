@@ -1,0 +1,237 @@
+MCP — Level I · Lesson I.1 · Session I.1.2
+Part 2 — Exercises
+George Kokkotas
+Energy 4 / Fatigue 2
+Theme: Mathematical Objects and Equality Discipline
+
+Submit your attempts under this format:
+M1–M4 Mandatory Core
+R1–R4 Recommended
+S1–S3 Stretch
+RI1–RI2 Research Integration
+
+Rules:
+- No solutions are included.
+- Write reasoning, not only final answers.
+- If stuck, write exactly where the confusion begins.
+- Programming gaps are separate from math mistakes.
+- Use =, ⇒, and ⇔ carefully.
+
+MANDATORY CORE — 4 exercises
+
+M1 — Object Classification / Mathematical Language / L / Easy–Pre-Moderate
+Classify each item as one of:
+A) expression
+B) equation/condition
+C) implication
+D) equivalence
+E) membership statement/condition
+F) programming command
+
+Items:
+1. x + 5 A
+2. x + 5 = 12 B
+3. x > 4 ⇒ x > 1 C
+4. x + 2 = 7 ⇔ x = 5 D
+5. x ∈ R E
+6. x = 7 F (In python. In maths, it's B)
+7. x == 7 F
+8. y = f(x) B???
+
+For each item, give one sentence explaining the classification.
+
+M2 — Legal Transformation / Algebra + Proof Methods / D+L / Pre-Moderate
+For each line pair, decide whether the symbol between them should be ⇒ or ⇔.
+Then explain why.
+
+1. x + 3 = 10 ⇔ x = 7, Because it is x + 3 = 10 IF AND ONLY IF x = 7 
+2. x = 7 ⇒ x + 3 = 10, Because it is implied that x = 7 since the equation/statement says x + 3 = 10
+3. x > 5 ⇒ x > 2, Because we say that, since x is greater than 5, it is a logical concequence that x is greater than 2 also.
+4. x > 2 ⇒ x > 5, Because we say that, since x is greater than 2, it is a logical concequence that x is greater than 5 also. But it is wrong. The best symbol to use is IF AND ONLY IF, because that way, the truth value becomes TRUE. (Yeah, that's what i mean. If and only if x > 5, then x > 2. Otherwise x > 3, which makes the initial assumption FALSE)
+5. x² = 9 ⇔ x = 3, Same as 1. (My bad, sorry)
+6. x = 3 ⇒ x² = 9, Same as 2. (My bad... )
+
+Note, there are several equations/inequalities here, like 1 and 2, 5 and 6, where both symbols are correct, depending on how you read it.
+
+Use real numbers unless stated otherwise.
+
+M3 — Equality Discipline / Algebra / D / Pre-Moderate
+Solve each equation and write every step using ⇔ only when the step is reversible.
+
+1. x - 4 = 9
+	x - 4 = 9 ⇒ x = 9 + 4 = 13 ⇒ x = 13 ⇔ x - 4 = 9
+	13 - 4 = 9
+2. 2x = 14
+	2x = 14 ⇒ x = 14/2 ⇒ x = 7 ⇔ 2x = 14
+	2 * 7 = 14
+3. x/3 = 5
+	x/3 = 15 ⇒ x = 5 * 3 ⇒ x = 15 ⇔ x/3 = 5
+	15/3 = 5 (I genuinely saw 15 instead of 5 here!!!)
+4. 2x - 1 = 9
+	2x - 1 = 9 ⇒ 2x = 9 + 1 ⇒ 2x = 10 ⇒ x = 5 ⇔ 2x = 10
+	2*5 - 1 = 9
+
+After each solution, verify by substitution.
+
+M4 — Function Rule vs Value / Functions + Mathematical Language / L / Pre-Moderate
+Consider:
+
+f: R → R,   f(x) = 3x + 2
+
+Answer:
+1. What is the function rule?
+Every point of the input value belongs to R, every function's output belongs to R
+2. What is the input variable?
+x
+3. What is f(4)?
+f(4) = 3 * 4 + 2 = 14
+4. What point on the graph corresponds to input 4?
+(4, 14)
+5. Is f(x)=3x+2 the same kind of object as f(4)=14? Explain the difference.
+No. f(x) is the function's formula, where f(4)=14 is a statement about its value on the point (4, y)
+
+RECOMMENDED — 4 exercises
+
+R1 — Implication vs Equivalence / Logic / L / Pre-Moderate
+For each pair, decide whether the relation is:
+A) P ⇒ Q only
+B) Q ⇒ P only
+C) P ⇔ Q
+D) neither direction always true
+
+1. P: x = 2,     Q: x² = 4 A
+2. P: x > 10,   Q: x > 1 A
+3. P: x ≠ 0,    Q: x² > 0 A
+4. P: x is divisible by 6, Q: x is divisible by 3 In R or Z? In Z D, in R, C. Example 15/3 = 5 and 15/6 = 2.5. Could be B, it's looks like it's the more appropriate choice, but i can't think of a case, right now... 
+5. P: x + 1 = 4, Q: x = 3 C
+
+Give one counterexample where needed.
+
+R2 — Domain and Equality / Sets + Functions / D+L / Pre-Moderate
+For each rule, write its real-number domain condition. Then classify the domain condition as a statement or predicate.
+
+1. f(x)=1/x, x != 0, (neg_inf, 0) U (0, inf)
+2. g(x)=sqrt(x-2), x >= 0, [0, inf)
+3. h(x)=ln(x), x > 0, (0, inf)
+4. q(x)=1/(x+5) x > -5, (-5, inf)
+
+(No comments here, i should've not ran through it...)
+
+Write the condition in symbols and words.
+
+R3 — Symbol Repair / Scientific Writing / L / Pre-Moderate
+Each line uses a symbol sloppily. Rewrite it with better mathematical discipline.
+
+1. x + 3 ⇒ 10 (=)
+2. x = positive (x > 0)
+3. x > 5 = x > 2 (⇒)
+4. f(2) ⇒ 7 (=)
+5. V ∈ C = V ∈ P (⇔)
+
+For each, state what the original line was probably trying to say.
+
+R4 — Programming Equality / C / Easy–Pre-Moderate
+Write Python-style commands for the following:
+
+1. assign 12 to x
+2. test whether x equals 12
+3. test whether x is greater than 5
+4. test whether x is not equal to 0
+5. store the truth value of x > 5 in a variable named condition
+6. write one comment explaining the difference between = and == in Python
+
+x = 12
+x == 12
+x > 5
+x != 0
+condition = x > 5
+# = this assigns a value
+# == this tests a truth value.
+
+Do not run the code unless you want to.
+
+STRETCH — 3 exercises
+
+S1 — Counterexample Precision / Logic + Proof Methods / L / Moderate Probe
+For each false claim, give one counterexample and explain why it is enough to destroy the claim.
+
+1. x² = 16 ⇔ x = 4, x = -4 is also valid
+2. x > 0 ⇔ x² > 0 x < 0 gives x^2 > 0... 
+3. x ∈ R ⇔ x ∈ Z, What about x 0.99, π, etc...
+4. x > 3 ⇒ x > 10 What about x = 4?
+
+S2 — Mini-Proof with Legal Steps / Proof Methods + Algebra / L / Moderate Probe
+Prove:
+
+If x = 4, then 2x + 1 = 9.
+
+Your proof must include:
+1. the assumption,
+x = 4 ⇒ 2x + 1 = 9
+2. substitution,
+2x = 9 - 1
+3. simplification,
+2x = 8
+x = 4
+4. conclusion,
+It is true!
+5. one sentence explaining why this proves only one direction.
+It doesn't! The last step goes both ways!
+
+S3 — Equivalence Chain / Algebra / D+L / Moderate Probe
+Complete the solution chain using ⇔ where legal:
+
+3x + 2 = 17
+⇒ 3x = 15
+⇔ x = 5
+
+Then write a two-sentence explanation:
+1. why each step is reversible,
+Only the last step is reversible, what are you talking about?
+2. why this chain proves equivalence between the first and last line.
+Because, you must have a number which, if you multiply by 3 and add 2, gives you 17.
+
+RESEARCH INTEGRATION — 2 exercises
+
+RI1 — Clinical Genetics Logic / Mathematical Modelling + Scientific Writing / A / Pre-Moderate
+Let:
+C = set of variants satisfying classification criteria
+P = set of clinically actionable variants
+V = a specific variant
+
+Compare the claims:
+
+A. V ∈ C ⇒ V ∈ P
+If a variant satisfies the classification criteria, it is also a clinically actionable variant. (WEAK)
+B. V ∈ C ⇔ V ∈ P
+A variant is clinically actionable, only in the case where it meets the classification criteria (STRONG)
+C. V ∈ P ⇒ V ∈ C
+A variant is clinically actionable, therefore, it meets the classification criteria (VERY STRONG)
+
+For each claim:
+1. translate it into plain English,
+2. say whether it is weak, strong, or very strong,
+3. give one reason why a clinical genetics report must not confuse these forms.
+Cause you might, i don't know, destroy a life? Since when classification criterea mean an action is available? 
+A and B are both WEAK, but you gave me three options, so i used them all.
+You need many factors to actually have some clinical leeway. Meeting the criteria is only the entrance. That's why C is VERY STRONG
+
+RI2 — Session Archive Note / Scientific Communication + GitHub Discipline / A / Easy–Pre-Moderate
+Create a 6-line archive note for this session:
+
+1. Session title
+Mathematical Objects and Equality Discipline
+2. Energy/Fatigue
+Energy is around 4, with 5 being well motivated.
+Fatigue is around 2, with 5 being exhausted
+3. Three symbols trained
+We trained in equalities (=), implications (⇒) and reversible conditions (⇔).
+4. One distinction trained
+We separated the meaning of implications from equalities.
+5. One mistake risk from today
+Mistaking reversible conditions with implications.
+6. One GitHub/archive filename you would use for this session
+Mathematics Conditioning Program Session I.1.2
+
+END OF EXERCISES
+No solutions included.

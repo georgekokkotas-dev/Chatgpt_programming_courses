@@ -19,6 +19,22 @@ Problem → Algorithm → Pseudocode → Implementation → Command Execution �
 - Level I — Digital and Algorithmic Foundations
 - Lesson 1 — What is a Computer Program?
 - Session 1 — Completed and passed
+- Session 2 — Completed and passed
+  - Final corrected report archived in `archive/session-02-final-corrected-report.md`
+  - Session files stored in `sessions/level-01-lesson-01-session-02/`
+  - Git status: available through WSL Ubuntu; native Windows CMD Git remains a PATH/setup gap
+
+## Latest Session Snapshot
+
+**Session 2 — Refactor biological sample report into a cleaner mini-project**
+
+- Mandatory Completion: 100%
+- Mandatory Mastery: 78%
+- Overall Mastery: 70%
+- Research Readiness: 65%
+- Main unresolved technical point: validation must happen before division
+- Biology / Genetics domain knowledge: advanced / not assessed by this beginner Python exercise
+- Bio-computational reporting discipline: 70%
 
 ## Rule Summary
 

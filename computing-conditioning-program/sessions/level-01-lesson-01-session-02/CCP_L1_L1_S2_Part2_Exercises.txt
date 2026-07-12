@@ -1,0 +1,361 @@
+CCP — Level I, Lesson 1, Session 2
+Part 2 — Exercise File
+Mode: B+ / Controlled C
+Energy: 4/5
+Fatigue: 2/5
+Primary Track: Python
+Support Tracks: Windows CMD, Git/GitHub, Pseudocode, Documentation
+Rule: No solutions before attempt.
+
+SESSION TARGET
+Refactor the first working biological sample report into a cleaner, more professional mini-project:
+messy script → clean filename → exact variables → validation → readable report → README → Git/GitHub readiness.
+
+SUBMISSION FORMAT
+Submit your answers in one message using this structure:
+M1:
+cd C:\Users\George\Desktop\CCP Lessons
+dir
+ren "Exercise 10-7.py" dna_sample_report.py
+python dna_sample_report.py
+
+M2:
+import math
+
+sample_id = "#12345"
+organism = "H. Sapiens"
+sequence = "ATGGCCCCGTAAATGTCGTATAGTGA" # formerly seq
+sequence_length = len(sequence) # formely sequence_length
+gc_percent = ((sequence.count("G") + sequence.count("C"))) / sequence_length * 100 # formerly gc_100
+gc_count = sequence_length * gc_percent / 100
+data_source = "www.genericdatabasesite.site"
+if gc_percent <= 0 or gc_percent > 100 or math.isnan(gc_percent):
+	print(f'GC% has an invalid value.')
+elif gc_percent == None:
+	print(f'GC% had no value.')
+else:
+	print(f"Sample ID: {sample_id}")
+	print(f"Organism: {organism}")
+	print(f"Sequence: {sequence}") 
+	print(f"Sequence Length: {sequence_length}")
+	print(f"GC%: {gc_percent}%")
+	print(f"Estimated GC Count: {gc_count}") 
+	print(f'The data were obtained through public datasets: {(data_source)}')
+
+(Note: I saw your correction, but i tried and example and it worked.
+Note 2: sequence[0] was a mistake of omission. You did notice that it's not anywhere else than where you found it!)
+
+M3:
+import math
+
+sample_id = "#12345"
+organism = "H. Sapiens"
+sequence = "ATGGCCCCGTAAATGTCGTATAGTGA" # formerly seq
+sequence_length = len(sequence) # formely sequence_length
+gc_percent = ((sequence.count("G") + sequence.count("C"))) / sequence_length * 100 # formerly gc_100
+gc_count = sequence_length * gc_percent / 100
+data_source = "www.genericdatabasesite.site"
+if sequence_length <= 0:
+	print(f'Sequence has an invalid value')
+elif gc_percent <= 0 or gc_percent > 100 or math.isnan(gc_percent):
+	print(f'GC% has an invalid value.')
+elif gc_percent == None:
+	print(f'GC% had no value.')
+else:
+	print(f"Sample ID: {sample_id}")
+	print(f"Organism: {organism}")
+	print(f"Sequence: {sequence}") 
+	print(f"Sequence Length: {sequence_length}")
+	print(f"GC%: {gc_percent}%")
+	print(f"Estimated GC Count: {gc_count}") 
+	print(f'The data were obtained through public datasets: {(data_source)}')
+
+M4:
+DNA Sample Report
+-----------------
+Sample ID: #12345
+Organism: H. Sapiens
+Sequence: A
+Sequence Length: 26
+GC%: 46.15384615384615%
+Estimated GC Count: 12.0
+The data were obtained through public datasets: www.genericdatabasesite.site
+
+(Note: After correction, it prints this:
+
+DNA Sample Report
+-----------------
+Sample ID: #12345
+Organism: H. Sapiens
+Sequence: A
+Sequence Length: 26
+GC%: 46.15384615384615%
+Estimated GC Count: 12.0
+The data were obtained through public datasets: www.genericdatabasesite.site)
+
+R1:
+1. Different
+2. Same
+3. Different
+4. Same
+
+R2:
+There's a mismatch between the assigned value's variable and the printed variable, which causes a NameError.
+
+R3:
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\George>git --version
+'git' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\George>
+
+R4:
+Computing Conditioning Programe Courses
+
+This project serves the goal to develop the knowledge around coding, programming languages, good programming habits
+and bioinformatics applications.
+
+Each Session gives the student a small part of theory and an exercise of 4 mandatory and 9 optional exercises, depending on their energy and fatigue status
+The student, after solving the exercises, he produces a .txt file, a script file and by using AI model (ChatGPT 5.6 Plus), they upload it to GitHub.
+
+Simply, copy and paste the original prompt from the GitHub archive to your ChatGPT programmed conversations.
+
+Since this is an AI-driven course, some parts may include mistakes.
+
+S1:
+FUNCTION DNA_SEQUENCE
+	PRINT TEXT "PASTE THE SEQUENCE OR UPLOAD THE FASTA/FASTQ FILE:"
+	INPUT TEXT
+OR
+	INPUT FILE
+		IF 
+			FILE NOT .FASTA OR NOT .FASTQ
+		THEN
+		PRINT TEXT "FILE EXTENSION NOT RECOGNISABLE"
+		END IF
+	END INPUT
+END FUNCTION
+
+SET SEQUENCE = DNA_SEQUENCE
+SET SET_NUCLEO = "A", "T", "C", "G"
+IF
+	ANY(SEQUENCE) NOT IN SET_NUCLEO
+THEN
+	PRINT TEXT "UNKNOWN BASE"
+	PRINT SEQUENCE
+END IF
+FOR
+	ANY(SEQUENCE) NOT IN SET_NUCLEO
+PRINT "-"
+END FOR
+END
+
+(Note: What was wrong with it???)
+
+S2: I don't understand the question.
+S3:
+C:\Users\George\Desktop\CCP_Courses
+l1_les1_s1/
+scripts/
+dna_sample_report.py
+results/
+notes/
+README.md
+README.txt
+
+A1:
+A GC percentage is a stability factor for any DNA molecule. GC are connected via 3 hydrogen bonds and they require more energy to denaturate and separate,
+thus, a high GC% can tell scientists how stable is a region, mutation-wise, or how this strand should be properly manipulated.
+
+(Note: Yeah, i keep mixing Purines and Pyrimidines all the time!)
+
+A2:
+I think this small script is a part of a bigger work that comes ahead.
+It isn't a serious work as of yet, but it allows small scale developmental training and conditioning in coding, data handling,
+data analysis and scientific reasoning through data.
+It's a really small project and uses basic concepts and commands, which currently aren't sufficient for full scale algorithm development.
+I think the next step would be a larger database, more logic criteria and validation implementation, function development, input files,
+and use of libraries among many others.
+
+MANDATORY CORE — Completion %
+
+M1. File/Path Discipline — Windows CMD — Easy — Command/Syntax — Mandatory
+Task:
+Write the exact Windows CMD commands you would use to:
+1. enter your project folder,
+2. list the files,
+3. rename your old script file from a spaced filename such as "Exercise 10-7.py" to dna_sample_report.py,
+4. run dna_sample_report.py.
+Expected output:
+A clean command sequence, one command per line.
+Submission format:
+Commands only.
+Template:
+cd ...
+dir
+ren "old filename.py" new_filename.py
+python new_filename.py
+
+M2. Variables and Data Types — Python — Pre-Moderate — Application — Mandatory
+Task:
+Rewrite your biological sample script so that it uses these exact variable names:
+sample_id
+organism
+sequence
+data_source
+sequence_length
+gc_count
+gc_percent
+Rules:
+- Store the DNA sequence as a string, not a list.
+- Do not use seq_count or gc_100 in this version.
+- Use your own realistic values.
+Expected output:
+Python code that stores values, calculates length, GC count, and GC percentage.
+Submission format:
+Paste the full Python code.
+
+M3. Validation Logic — Python — Moderate — Application — Mandatory
+Task:
+Add validation for sequence length:
+If sequence_length <= 0, print an error message and do not print the normal report.
+Otherwise, calculate/print the normal report.
+Expected output:
+A script with an if/else structure that prevents division by zero.
+Submission format:
+Paste the relevant validation section or full script.
+Template:
+if sequence_length <= 0:
+    print(...)
+else:
+    ...
+
+M4. Clean Report Output — Python — Pre-Moderate — Application — Mandatory
+Task:
+Format the report so it includes:
+1. report title,
+2. separator line,
+3. sample ID,
+4. organism,
+5. sequence length with bp,
+6. GC count,
+7. GC percentage with %,
+8. data source.
+Expected output:
+Readable report output, not raw variable dumps.
+Submission format:
+Paste the print section and a sample of the output you got or expect.
+
+RECOMMENDED — Mastery %
+
+R1. Debugging / Name Discipline — Python — Easy — Drill/Trace — Recommended
+Task:
+For each pair, decide whether Python treats the names as the same variable or different variables:
+1. sample_id / sampleID
+2. sequence_length / sequence_length
+3. gc_percent / GC_percent
+4. data_source / data_source
+Expected output:
+Same or Different for each pair, plus one sentence explaining the rule.
+Submission format:
+Four classifications + one sentence.
+
+R2. Error Interpretation — Python — Pre-Moderate — Learning/Explanation — Recommended
+Task:
+Explain what would happen in this code and why:
+sample_id = "BIO_002"
+print(Sample_id)
+Expected output:
+Identify the likely error type/pattern and explain the cause.
+Submission format:
+2–4 sentences.
+
+R3. Git Installation Check — Windows CMD / Git — Easy — Command/Syntax — Recommended
+Task:
+Run or write the command that checks whether Git is available:
+git --version
+If Git works, submit the version line.
+If Git fails, submit the exact error message or write the expected error.
+Expected output:
+Either Git version or Git/PATH gap evidence.
+Submission format:
+Command + result.
+
+R4. README Skeleton — Documentation — Pre-Moderate — Application — Recommended
+Task:
+Write a short README skeleton for this mini-project.
+It must include:
+- Project title
+- Purpose
+- Input/data stored
+- Output/report produced
+- How to run
+- Current limitations
+Expected output:
+A GitHub-ready README skeleton.
+Submission format:
+Markdown bullets or short sections.
+
+STRETCH — Challenge %
+
+S1. Character Validation — Python — Post-Moderate — Application — Stretch
+Task:
+Add a validation idea for allowed DNA characters.
+The program should detect whether the sequence contains characters outside A, T, G, C.
+You may write either pseudocode or Python.
+Expected output:
+A validation block that checks DNA alphabet validity.
+Submission format:
+Pseudocode or Python.
+Hint:
+Think in terms of comparing the sequence characters against the allowed set {"A", "T", "G", "C"}.
+
+S2. Output Saving Plan — File I/O Preview — Moderate — Learning/Explanation — Stretch
+Task:
+Describe how the printed report could later be saved into:
+results/sample_report_output.txt
+Do not write full file-writing code unless you already know how.
+Expected output:
+A mini-plan for moving from terminal output to saved output file.
+Submission format:
+3–6 bullets.
+
+S3. Project Folder Tree — Project Architecture — Moderate — Application — Stretch
+Task:
+Design the clean folder tree for Session 2.
+It must include:
+scripts/
+results/
+notes/
+README.md
+Expected output:
+A clean plain-text folder tree.
+Submission format:
+Folder tree only.
+	
+RESEARCH / APPLICATION INTEGRATION
+
+A1. Biological Interpretation Discipline — Biological/Data Interpretation — Pre-Moderate — Learning/Explanation — Research/Application
+Task:
+Explain what GC percentage can suggest biologically and why it is not enough by itself to interpret the biological meaning of a sequence.
+Expected output:
+Realistic interpretation without overclaiming.
+Submission format:
+4–6 sentences.
+
+A2. GitHub Portfolio Decision — GitHub Publication / Portfolio Development — Moderate — Application — Research/Application
+Task:
+Write a short portfolio note explaining why this tiny script belongs in your GitHub learning repository even though it is simple.
+Include:
+- what skill it demonstrates,
+- what limitation remains,
+- what the next improvement will be.
+Expected output:
+Professional portfolio note.
+Submission format:
+5–8 bullets or one short paragraph.
+
+END OF EXERCISE FILE

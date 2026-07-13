@@ -1,0 +1,169 @@
+MCP — Level I · Lesson I.1 · Session I.1.3
+Part 2 — Exercises
+George Kokkotas
+Energy 5 / Fatigue 1
+Theme: Conditions, Domains, and Truth Sets
+
+Submit your attempts under this format:
+M1–M4 Mandatory Core
+R1–R4 Recommended
+S1–S3 Stretch
+RI1–RI2 Research Integration
+
+Rules:
+- Exactly 13 exercises are assigned.
+- No solutions are included.
+- Write reasoning, not only final answers.
+- If stuck, write exactly where the confusion begins.
+- Programming gaps are separate from math mistakes.
+- Use =, ⇒, ⇔, ∈, ∉, ∪, and interval notation carefully.
+- For every domain task, identify the dangerous structure first.
+
+MANDATORY CORE — 4 exercises
+
+M1 — Condition vs Truth Set / Mathematical Language + Logic / L / Pre-Moderate
+For each condition over real numbers, write:
+1. whether it is a condition/predicate or already a fixed statement,
+2. its truth set in interval or set notation,
+3. one sentence explaining your reasoning.
+
+Items:
+a. x > 2
+b. x ≤ -1
+c. x = 5
+d. x² = 9
+e. x ∈ R
+f. 3 > 2
+
+M2 — Domain from Dangerous Structures / Functions + Sets / D+L / Pre-Moderate
+For each function, write:
+1. the dangerous structure,
+2. the domain condition,
+3. the final domain in interval or set notation.
+
+a. f(x) = 1/x
+b. g(x) = sqrt(x - 4)
+c. h(x) = 1/(x + 2)
+d. q(x) = sqrt(x + 3)
+
+M3 — Combined Domain Conditions / Algebra + Functions / D+L / Pre-Moderate
+Find the domain of each function. Show every restriction separately, then combine them.
+
+a. f(x) = sqrt(x - 1)/(x + 5)
+b. g(x) = 1/sqrt(x - 2)
+c. h(x) = sqrt(x + 4)/(x - 3)
+d. q(x) = sqrt(5 - x)
+
+M4 — Truth Set vs Domain / Mathematical Language + Functions / L / Pre-Moderate
+For each item, say whether it asks for a truth set, a domain, or both. Then explain the difference.
+
+a. Solve x² = 16.
+b. Find the domain of f(x)=sqrt(x-2).
+c. For which x is 1/(x-1) > 0 true?
+d. Find the allowed inputs of g(x)=1/(x-1).
+e. For which x is sqrt(x-2)=3 true?
+
+RECOMMENDED — 4 exercises
+
+R1 — Interval Notation Translation / Sets / D / Easy–Pre-Moderate
+Translate each condition into interval notation.
+
+a. x > 7
+b. x ≥ 7
+c. -2 < x < 5
+d. -2 ≤ x < 5
+e. x ≠ 0
+f. x ≤ -3 or x > 4
+
+R2 — Membership Checks / Sets + Logic / D+L / Pre-Moderate
+For each statement, write TRUE or FALSE and explain briefly.
+
+a. 2 ∈ [2,∞)
+b. 2 ∈ (2,∞)
+c. -5 ∈ (-∞,-5) ∪ (-5,∞)
+d. 0 ∈ R \ {0}
+e. 3 ∈ { -3, 3 }
+f. -3 ∈ { x ∈ R | x² = 9 }
+
+R3 — Equivalence by Truth Sets / Logic + Proof Methods / L / Moderate
+For each pair of conditions over R, decide whether they are equivalent.
+Write either ⇔ valid or ⇔ invalid, and justify using truth sets or counterexamples.
+
+a. x > 5 and x ≥ 6
+b. x² = 9 and x = 3
+c. x² = 9 and x = 3 or x = -3
+d. x ≠ 0 and x² > 0
+e. x ≥ 2 and x - 2 ≥ 0
+
+R4 — Python Validity Conditions / Programming Commands / C / Pre-Moderate
+Write Python-style Boolean conditions for the following real-number validity checks.
+
+a. x is allowed for sqrt(x - 4)
+b. x is allowed for 1/(x + 2)
+c. x is allowed for sqrt(x + 3)/(x - 1)
+d. x is in the interval [2, 10)
+e. x is outside the forbidden value 0
+f. Write one comment explaining why validity checks should come before calculation.
+
+STRETCH — 3 exercises
+
+S1 — Domain Trap: Denominator Square Root / Algebra + Functions / L / Moderate
+Find the domain of:
+
+f(x) = 1/sqrt(x - 5)
+
+You must explain why the condition is not merely x - 5 ≥ 0.
+
+S2 — Truth Set of a Rational Inequality / Inequalities + Logic / L / Moderate
+Find the truth set of:
+
+1/(x - 2) > 0
+
+Show:
+1. forbidden value,
+2. sign reasoning,
+3. interval answer.
+
+S3 — Equivalence Chain with Domain Awareness / Algebra + Proof Methods / D+L / Moderate
+Consider:
+
+sqrt(x - 1) = 3
+
+Complete a legal solution with domain awareness.
+You must include:
+1. domain condition,
+2. transformation step,
+3. solution,
+4. verification,
+5. whether the final answer is a truth set or a domain.
+
+RESEARCH INTEGRATION — 2 exercises
+
+RI1 — Biological Validity Conditions / Mathematical Biology + Scientific Writing / A / Pre-Moderate
+Consider the model expression:
+
+N * (1 - N/K)
+
+where N is population size and K is carrying capacity.
+
+Write:
+1. mathematical restrictions on N and K,
+2. biological restrictions on N and K,
+3. what breaks if K = 0,
+4. what becomes biologically suspicious if K < 0,
+5. one sentence connecting this to your dN_gi/dt modelling idea.
+
+RI2 — Genomic Filtering as a Truth Set / Genomic Modelling + Sets / A / Pre-Moderate
+Let V be a set of variants. Define a filtered set:
+
+A = { v ∈ V | AF(v) < 0.01 and CLNSIG(v) ∈ {P, LP, VUS} }
+
+Answer:
+1. What is the universe/set being filtered?
+2. What are the two conditions?
+3. Is A a truth set, a domain, or a filtered subset?
+4. Translate the filter into plain English.
+5. Why would confusing “filtered subset” with “clinically actionable set” be dangerous?
+
+END OF EXERCISES
+No solutions included.

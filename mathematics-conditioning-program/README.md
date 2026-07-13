@@ -22,9 +22,10 @@ Lesson I.1 — Mathematical Statements, Symbols, and Meaning
 Completed:
 - Session I.1.1 — Mandatory Core passed
 - Session I.1.2 — Passed; full 13/13 exercise coverage
+- Session I.1.3 — Passed strongly after revision; Mandatory Mastery 90–92%, Coverage 46%
 
 Next:
-- Session I.1.3 — Conditions, Domains, and Truth Sets
+- Session I.1.4 — Review, mini-assessment, GitHub/archive task, and Lesson I.1 consolidation
 
 ## Rule Summary
 

@@ -1,0 +1,71 @@
+CCP — Level I, Lesson 1, Session 3
+Part 2 — Mandatory-Core Submission
+Mode adapted to Mandatory-Core Only after Energy/Fatigue changed.
+
+M1:
+import math
+
+sample_id = "#12345"
+organism = "H. sapiens"
+sequence = "ATGGCCCCGTAAATGTCGTATAGTGA"
+sequence_length = len(sequence)
+if sequence_length <= 0: # Checks for valid sequence length
+	print(f'Sequence has an invalid value')
+else:
+	gc_count = sequence.count("G") + sequence.count("C")
+	gc_percent = gc_count / sequence_length * 100
+if gc_percent <= 0 or gc_percent > 100 or math.isnan(gc_percent):
+	print(f'GC% has an invalid value.')
+elif gc_percent == None:
+	print(f'GC% had no value.')
+else:
+	data_source = "www.genericdatabasesite.site"
+	print(f"DNA Sample Report")
+	print(f"-----------------")
+	print(f"Sample ID: {sample_id}")
+	print(f"Organism: {organism}")
+	print(f"Sequence: {sequence}") 
+	print(f"Sequence Length: {sequence_length}")
+	print(f"GC%: {gc_percent}%")
+	print(f"GC Count: {gc_count}") 
+	print(f'The data were obtained through public datasets: {(data_source)}')
+
+M2:
+Direct GC count was implemented using:
+
+gc_count = sequence.count("G") + sequence.count("C")
+gc_percent = gc_count / sequence_length * 100
+
+Submitted output section:
+print(f"GC%: {gc_percent}%")
+print(f"GC Count: {gc_count}")
+
+M3:
+Output synchronization table submitted. Main expected rows included:
+- DNA Sample Report
+- Sample ID: #12345
+- Organism: H. sapiens
+- Sequence: ATGGCCCCGTAAATGTCGTATAGTGA
+- Sequence Length: 26
+- GC%: 46.15384615384615%
+- GC Count: 12
+- The data were obtained through public datasets: www.genericdatabasesite.site
+
+M4:
+gkokkotas@GCobalt:~$ pwd
+/home/gkokkotas
+gkokkotas@GCobalt:~$ cd /mnt/c/users/George/Desktop/"CCP Lessons"
+gkokkotas@GCobalt:/mnt/c/users/George/Desktop/CCP Lessons$ ls -lah
+total 0
+drwxrwxrwx 1 gkokkotas gkokkotas 512 Jul 14 10:32 .
+drwxrwxrwx 1 gkokkotas gkokkotas 512 Jul 14 12:34 ..
+drwxrwxrwx 1 gkokkotas gkokkotas 512 Jul 12 18:40 l1_les1_s1
+drwxrwxrwx 1 gkokkotas gkokkotas 512 Jul 14 13:47 l1_les2_s2
+drwxrwxrwx 1 gkokkotas gkokkotas 512 Jul 14 13:47 l1_les2_s3
+gkokkotas@GCobalt:/mnt/c/users/George/Desktop/CCP Lessons$ git --version
+git version 2.43.0
+gkokkotas@GCobalt:/mnt/c/users/George/Desktop/CCP Lessons$ git status
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+Optional exercises R1-A2 were not attempted due to adapted workload and are frozen, not failed.

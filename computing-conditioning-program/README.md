@@ -23,18 +23,23 @@ Problem → Algorithm → Pseudocode → Implementation → Command Execution �
   - Final corrected report archived in `archive/session-02-final-corrected-report.md`
   - Session files stored in `sessions/level-01-lesson-01-session-02/`
   - Git status: available through WSL Ubuntu; native Windows CMD Git remains a PATH/setup gap
+- Session 3 — Completed and passed under Mandatory-Core Only adaptation
+  - Mandatory-core report archived in `archive/session-03-mandatory-core-report.md`
+  - Session files stored in `sessions/level-01-lesson-01-session-03/`
+  - Git status: WSL Git works; local CCP Lessons folder is not yet a Git repository
 
 ## Latest Session Snapshot
 
-**Session 2 — Refactor biological sample report into a cleaner mini-project**
+**Session 3 — Mixed Programming + CLI + Application / Research Link**
 
 - Mandatory Completion: 100%
-- Mandatory Mastery: 78%
-- Overall Mastery: 70%
-- Research Readiness: 65%
-- Main unresolved technical point: validation must happen before division
-- Biology / Genetics domain knowledge: advanced / not assessed by this beginner Python exercise
-- Bio-computational reporting discipline: 70%
+- Mandatory Mastery: 79.75%
+- Adapted Session Result: PASS
+- Command Fluency: 78%
+- Debugging Maturity: 72%
+- Research Readiness: 66%
+- Main unresolved technical point: `gc_percent` dependent checks must remain inside the valid `sequence_length` branch
+- Git/GitHub status: Git works in WSL; next local target is `git init` / `git add` / `git commit`
 
 ## Rule Summary
 

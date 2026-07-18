@@ -1,0 +1,154 @@
+MCP — Level I · Lesson I.2 · Session I.2.1
+
+Part 2 — Exercises
+
+George Kokkotas
+
+Energy 5 / Fatigue 2
+
+Theme: Number Systems and Mathematical Foundations
+
+Submit your attempts under this format:
+
+M1–M4 Mandatory Core
+R1–R4 Recommended
+S1–S3 Stretch
+RI1–RI2 Research Integration
+
+Rules
+
+-   Do not look for solutions before attempting.
+-   Write reasoning, not only final answers.
+-   If stuck, write exactly where the confusion begins.
+-   Programming gaps are separate from math mistakes.
+
+------------------------------------------------------------------------
+
+MANDATORY CORE — 4 exercises
+
+M1 — Number Classification / D / Easiest
+
+Classify into the smallest set (ℕ, ℤ, ℚ, ℝ, ℂ):
+
+0, -17, 14/7, -9/4, √49, √7, π−3, √(-16), 6+0i, -2+5i.
+
+Explain every answer.
+
+M2 — Rational vs Irrational / D+L / Easier
+
+Determine whether each is rational or irrational and justify:
+
+0.125, 0.333…, 0.101001000100001…, √36/5, √3/2, π+(-π), π/π, √2·√2, √12,
+7/0.
+
+Explain precisely why 7/0 is undefined.
+
+M3 — Set Logic / D+L / Easy
+
+Judge True/False and repair false statements:
+
+ℕ⊆ℤ, ℤ⊆ℕ, ℚ⊆ℝ, ℝ⊆ℚ, ℝ⊆ℂ, ℂ⊆ℝ, -3∈ℕ, -3∈ℤ, √2∈ℚ, 4+0i∈ℝ.
+
+Then explain the difference between ∈ and ⊆.
+
+M4 — Scientific Domains / A+D / Moderate
+
+Choose the most appropriate domain for:
+
+patients, population change, allele frequency, pathogenic variants,
+gene-expression change, disease probability, temperature difference,
+Fourier coefficient, sequencing reads, mutant-cell proportion.
+
+Use ℕ, ℤ, ℝ, [0,1], ℂ where appropriate.
+
+------------------------------------------------------------------------
+
+RECOMMENDED — 4 exercises
+
+R1 — Simplify then Classify / D / Easy
+
+Simplify then classify:
+
+18/6, -24/8, √81−10, √64/4, √(2²), √(-9), (3+2i)+(3−2i), i², i⁴,
+(1+i)/(1+i).
+
+R2 — Decimal Structure / D+L / Moderate
+
+Determine decimal type and whether rational/irrational for:
+
+2.75, 0.666…, 1.272727…, 3.141592…, 0.123456789101112…, -0.040404…
+
+Explain algebraically why repeating decimals are rational.
+
+R3 — Counterexamples / L / Hard
+
+Provide counterexamples for:
+
+Every real is rational. Every rational is an integer. Every integer is
+natural. Every complex has a non-zero imaginary part. The quotient of
+two integers is always an integer. The square root of every natural is
+rational. The sum of two irrationals is always irrational. The product
+of two irrationals is always irrational.
+
+R4 — Programming Types / C / Hard
+
+Write Python and R code creating:
+
+-   natural count
+-   negative integer
+-   rational decimal
+-   irrational approximation
+-   complex number
+
+Inspect each type/class and explain why programming numeric types differ
+from mathematical sets.
+
+------------------------------------------------------------------------
+
+STRETCH — 3 exercises
+
+S1 — Closure / D+L / Harder
+
+Determine closure of ℕ, ℤ, ℚ, ℝ, ℂ under addition, subtraction,
+multiplication and division. Provide counterexamples where closure
+fails.
+
+S2 — Irrational Reasoning / L / Harder
+
+State whether each claim is always, sometimes or never true:
+
+R+R, I+I, R+I, I×I, nonzero R×I, I÷I.
+
+Give examples for every “sometimes”.
+
+S3 — Constructing Numbers / D / Hardest
+
+Construct numbers satisfying requested properties: rational between 2
+and 3, irrational between 2 and 3, negative rational >−1, real not
+rational, complex not real, member of all ℕ⊂ℤ⊂ℚ⊂ℝ⊂ℂ, complex not real,
+non-terminating rational decimal.
+
+------------------------------------------------------------------------
+
+RESEARCH INTEGRATION — 2 exercises
+
+RI1 — Genetics Model Domains / A / Hardest
+
+For nAA = Np²:
+
+Assign domains, restrictions, expected vs observed counts, determine
+output domain, evaluate N=101 and p=0.3.
+
+RI2 — Publication-style Mathematical Methods / A / Hardest
+
+Define N, n, p, ΔN, r and z.
+
+Include: 1. definition 2. domain 3. restrictions 4. units 5.
+justification 6. one equation using at least four variables 7. state
+that results are simulated/illustrative.
+
+------------------------------------------------------------------------
+
+END OF EXERCISES
+
+No solutions included.

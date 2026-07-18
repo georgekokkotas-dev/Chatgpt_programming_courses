@@ -1,0 +1,212 @@
+MCP — Level I · Lesson I.2 · Session I.2.1
+
+Part 2 — Exercises
+
+George Kokkotas
+
+Energy 5 / Fatigue 2
+
+Theme: Number Systems and Mathematical Foundations
+
+Submit your attempts under this format:
+
+M1–M4 Mandatory Core
+R1–R4 Recommended
+S1–S3 Stretch
+RI1–RI2 Research Integration
+
+Rules
+
+-   Do not look for solutions before attempting.
+-   Write reasoning, not only final answers.
+-   If stuck, write exactly where the confusion begins.
+-   Programming gaps are separate from math mistakes.
+
+(NOTE: I had some help from Google's Gemini AI.)
+
+------------------------------------------------------------------------
+
+MANDATORY CORE — 4 exercises
+
+M1 — Number Classification / D / Easiest
+
+Classify into the smallest set (ℕ, ℤ, ℚ, ℝ, ℂ):
+
+a. 0, N. N is defined as N /belongs {0, 1, 2, 3,..., inf-2, inf-1, inf}
+b. -17, Q, It is a negative number. Z has no negatives.
+c. 14/7, Q. It written as an expression of two integers.
+d. -9/4, Q. Same as b.
+e. √49, Z. It is the square root of an integer, which's result is also an integer.
+f. √7, R. Although it is the square root of an integer, its result is not an integer.
+g. π - 3, R. π is irrational, so is π - 3.
+h. √(-16), C. Square root of an integer number
+i. 6 + 0i, N, but also C. N because every Natural can be a Complex, but this statement is written in its Complex form.
+j. -2 + 5i, C, Complex, because the imaginary part has a positive value.
+
+Explain every answer.
+
+M2 — Rational vs Irrational / D+L / Easier
+
+Determine whether each is rational or irrational and justify:
+
+0.125, 5/4. It's Rational.
+0.333…, It can be expressed as a quotient of two rationals. It's 1/3. Rational.
+0.101001000100001…, Irrational. The decimals are never ending.
+√36/5, Rational. root(36) is a rational number. 6/5 is rational.
+√3/2, Irrational. the square root of 3 is an irrational number.
+π+(-π), I am going to choose rational, even though it is π - π.
+π/π, Although both are π, an irrational number, I am going to choose rational, since the result is 1.
+√2·√2, The result is root(4). It bugs me since both are irrational, but i'll say rational.
+√12, Irrational. Its result cannot be written as a division of two rationals.
+7/0. Error. Division by 0.
+
+Explain precisely why 7/0 is undefined.
+
+M3 — Set Logic / D+L / Easy
+
+Judge True/False and repair false statements:
+
+ℕ⊆ℤ, N is a subset of Z. It is TRUE. {3, 5, 7} are Natural. Z are integers and they include the negatives too.
+ℤ⊆ℕ, FALSE. Z is not a subset of N.
+ℚ⊆ℝ, TRUE. Rationals are part of the whole Real Number set. 
+ℝ⊆ℚ, This is FALSE. R is not a subset of Rationals.
+ℝ⊆ℂ, TRUE. All numbers can be written as Complex.
+ℂ⊆ℝ, FALSE. Complex numbers include Real Numbers.
+-3∈ℕ, FALSE. Natural Numbers do not contain negatives.
+-3∈ℤ, TRUE, Integers can be negative.
+√2∈ℚ, FALSE. root(2) is an irrational number.
+4+0i∈ℝ, AMBIGUOUS. It is wriiten in Complex form, but it is a Natural Number, which is a subset of R.
+
+Then explain the difference between ∈ and ⊆.
+
+M4 — Scientific Domains / A+D / Moderate
+
+Choose the most appropriate domain for:
+
+patients, N
+population change, R
+allele frequency, [0,1]
+pathogenic variants, N
+gene-expression change, R
+disease probability, [0,1]
+temperature difference, R
+Fourier coefficient, R (i don't know what's that!)
+sequencing reads, N
+mutant-cell proportion. Q
+
+The reason i didn't choose Z, and C is because i don't see anything that could be negative here.
+You can't have negative allele frequency, nor you can have an integer only gene-expression change, or sequencing reads!
+
+Use ℕ, ℤ, ℝ, [0,1], ℂ where appropriate.
+
+------------------------------------------------------------------------
+
+RECOMMENDED — 4 exercises
+
+R1 — Simplify then Classify / D / Easy (Not Attempted due to fatigue)
+
+Simplify then classify:
+
+18/6, -24/8, √81−10, √64/4, √(2²), √(-9), (3+2i)+(3−2i), i², i⁴,
+(1+i)/(1+i).
+
+R2 — Decimal Structure / D+L / Moderate (Not Attempted due to fatigue)
+
+Determine decimal type and whether rational/irrational for: 
+
+2.75, 0.666…, 1.272727…, 3.141592…, 0.123456789101112…, -0.040404…
+
+Explain algebraically why repeating decimals are rational.
+
+R3 — Counterexamples / L / Hard 
+
+Provide counterexamples for:
+
+Every real is rational. How about -root(2)?
+Every rational is an integer. No. π is not an integer.
+Every integer is natural. Again, -1!
+Every complex has a non-zero imaginary part. How about 4 + 0i?
+The quotient of two integers is always an integer. Really? 3/4.
+The square root of every natural is rational. root(3)...
+The sum of two irrationals is always irrational. π + (-π) = 0. 
+The product of two irrationals is always irrational. No... root(2) * root(2) = 2.
+
+R4 — Programming Types / C / Hard (Not Attempted due to fatigue)
+
+Write Python and R code creating:
+
+-   natural count
+-   negative integer
+-   rational decimal
+-   irrational approximation
+-   complex number
+
+Inspect each type/class and explain why programming numeric types differ
+from mathematical sets.
+
+------------------------------------------------------------------------
+
+STRETCH — 3 exercises
+
+S1 — Closure / D+L / Harder
+
+Determine closure of ℕ, ℤ, ℚ, ℝ, ℂ under addition, subtraction,
+multiplication and division. Provide counterexamples where closure
+fails.
+
+Addition: N closes. Z closes. Q closes. R closes. C closes.
+Subtraction: N fails: (5 - 8 = -3). Z closes. Q closes. R closes. C closes.
+Multiplication: N closes. Z closes. Q closes. R closes. C closes.
+Division: N fails (3/5 = 0.6). Z fails (-3/5 = -0.6). Q closes. R closes. C closes.
+
+Unless you include the undefined division by 0...
+
+S2 — Irrational Reasoning / L / Harder (Not Attempted due to fatigue)
+
+State whether each claim is always, sometimes or never true:
+
+R+R, I+I, R+I, I×I, nonzero R×I, I÷I.
+
+Give examples for every “sometimes”.
+
+S3 — Constructing Numbers / D / Hardest
+
+Construct numbers satisfying requested properties: 
+rational between 2 and 3, 2.5
+irrational between 2 and 3, e
+negative rational >−1, -0.5
+real not rational, root(3)
+complex not real, 8 - 2i
+member of all ℕ⊂ℤ⊂ℚ⊂ℝ⊂ℂ, 1 + 0i 
+complex not real, 9 + 12i
+non-terminating rational decimal. 0.333333333333333333333333333...
+
+------------------------------------------------------------------------
+
+RESEARCH INTEGRATION — 2 exercises
+
+RI1 — Genetics Model Domains / A / Hardest (Not Attempted due to fatigue)
+
+For nAA = Np²:
+
+Assign domains, restrictions, expected vs observed counts, determine
+output domain, evaluate N=101 and p=0.3.
+
+RI2 — Publication-style Mathematical Methods / A / Hardest (Not Attempted due to fatigue)
+
+Define N, n, p, ΔN, r and z.
+
+Include: 
+1. definition 
+2. domain 
+3. restrictions 
+4. units 
+5. justification 
+6. one equation using at least four variables 
+7. state that results are simulated/illustrative.
+
+------------------------------------------------------------------------
+
+END OF EXERCISES
+
+No solutions included.

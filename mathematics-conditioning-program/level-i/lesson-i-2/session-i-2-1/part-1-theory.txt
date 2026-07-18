@@ -1,0 +1,110 @@
+Mathematics Conditioning Program (MCP)
+Level I → Lesson I.2 → Session I.2.1
+Part 1 — Theory
+
+Session Status
+Energy: 5/5
+Fatigue: 2/5
+
+==================================================
+PART 1 — NUMBER SYSTEMS AND MATHEMATICAL FOUNDATIONS
+==================================================
+
+Lesson I.2 Overview
+
+Lesson I.2 builds the mathematical language of numbers. Everything in algebra, calculus, linear algebra, statistics, numerical analysis, and mathematical biology depends on understanding exactly what kinds of numbers we are allowed to use.
+
+Today's session introduces the hierarchy of number systems.
+
+Learning Objectives
+
+By the end of this session you should be able to:
+- distinguish every common number system;
+- know where each mathematical object belongs;
+- understand why mathematicians "invented" new kinds of numbers;
+- recognize subset relationships;
+- understand interval notation;
+- understand absolute value conceptually;
+- connect these ideas to biology and programming.
+
+1. Why Different Number Systems Exist
+
+Counting sheep → Natural Numbers
+Need to represent debt → Integers
+Need to divide → Rational Numbers
+Need √2 → Real Numbers
+Need √−1 → Complex Numbers
+
+2. Natural Numbers
+
+N = {0,1,2,...}
+
+Biological examples:
+- number of chromosomes
+- number of patients
+- sequencing depth
+- mutation count
+- bacterial colonies
+
+3. Whole Numbers
+
+This course will not use W. We use N = {0,1,2,...}.
+
+4. Integers
+
+Z = {...,-3,-2,-1,0,1,2,3,...}
+
+5. Rational Numbers
+
+Q = {p/q | p,q ∈ Z, q ≠ 0}
+
+Examples: 1/2, -3/7, 5, 0, 2.75
+
+Important clarification:
+π/1 does not make π rational because π is not an integer. A rational number must be a ratio of two integers.
+
+6. Irrational Numbers
+
+Numbers that cannot be written as p/q with p,q ∈ Z and q ≠ 0.
+Examples: π, e, √2.
+Their decimal expansions never terminate and never repeat periodically.
+
+7. Real Numbers
+
+R contains natural, integer, rational, and irrational numbers.
+
+8. Complex Numbers
+
+C contains numbers of the form a + bi, where i² = -1.
+Every real number is also complex because a = a + 0i.
+
+9. Hierarchy
+
+N ⊂ Z ⊂ Q ⊂ R ⊂ C
+
+Worked Example
+7 → N
+-5 → Z
+3/8 → Q
+√2 → R
+5 + 2i → C
+
+Programming Connection
+
+Python:
+5          # int
+2.5        # float
+3+4j       # complex
+
+R:
+5L         # integer
+2.5        # numeric (double)
+3+4i       # complex
+
+Research Connection
+
+- Number of patients → N
+- Gene expression change → R
+- Probability → [0,1]
+- Allele counts → N
+- Allele frequencies → [0,1] ⊂ R

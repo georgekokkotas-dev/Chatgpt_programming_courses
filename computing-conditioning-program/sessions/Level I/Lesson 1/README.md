@@ -1,57 +1,48 @@
 # Computing Conditioning Program (CCP)
 
-The Computing Conditioning Program is a structured Computing / Programming / Computer Science course for algorithmic thinking, pseudocode fluency, programming competence, command-line confidence, debugging discipline, software construction, scientific computing, research-computing readiness, and Git/GitHub publication discipline.
+**Level I — Lesson 1:** What is a Computer Program?  
+**Lesson status:** Completed  
+**Overall lesson score:** **8.7/10 — Very Good**
 
-## Core Chain
+The Computing Conditioning Program develops algorithmic thinking, pseudocode fluency, programming competence, command-line confidence, debugging discipline, software construction, scientific computing, research-computing readiness, and Git/GitHub publication discipline.
 
-Problem → Algorithm → Pseudocode → Implementation → Command Execution → Debugging → Testing → Documentation → Git Archive → Research / Application Use
+## Course documents
 
-## Repository Sections
+- [Operational prompt](../../../archive/01_CCP_Operational_Prompt.md)
+- [Archived program README](../../../archive/02_CCP_README.md)
+- [Curriculum map](../../../archive/03_CCP_Curriculum.md)
+- [Course structure](../../../archive/04_CCP_Course_Structure.md)
 
-- `course-prompt.md` — operational course prompt and rules
-- `course-structure.md` — hierarchy, tracks, delivery protocol, grading/logs
-- `curriculum.md` — 6-level curriculum map
-- `sessions/` — exercises, submissions, results, scripts
-- `archive/` — archived correction reports and session summaries
+## Lesson sessions
 
-## Current Progress
+- [Session 1](Sessions/Session%201/README.md) — completed and passed
+- [Session 2](Sessions/Session%202/README.md) — completed and passed
+- [Session 3](Sessions/Session%203/README.md) — completed and passed under the Mandatory-Core Only adaptation
+- [Session 4](Sessions/Session%204/README.md) — completed and passed under the Mandatory-Core Only adaptation
 
-- Level I — Digital and Algorithmic Foundations
-- Lesson 1 — What is a Computer Program? — **Completed**
-- Session 1 — Completed and passed
-- Session 2 — Completed and passed
-  - Final corrected report archived in `archive/session-02-final-corrected-report.md`
-  - Session files stored in `sessions/level-01-lesson-01-session-02/`
-- Session 3 — Completed and passed under Mandatory-Core Only adaptation
-  - Mandatory-core report archived in `archive/session-03-mandatory-core-report.md`
-  - Session files stored in `sessions/level-01-lesson-01-session-03/`
-- Session 4 — Completed and passed under Mandatory-Core Only adaptation
-  - Final report archived in `archive/session-04-final-report.md`
-  - Session files stored in `sessions/level-01-lesson-01-session-04/`
-  - Session score: 9.3/10
-  - Lesson I.1 overall score: 8.7/10 — Very Good
+Every session folder preserves the available exercises, submitted work, corrected work, scripts, final results, reports, and supporting test data as separate artifacts.
 
-## Latest Session Snapshot
+## Latest session snapshot
 
 **Session 4 — Consolidation: FASTA Workflow and Pythonisation**
 
 - Mandatory Core: 4/4 completed
-- Session Result: PASS
+- Session result: PASS
+- Session score: 9.3/10
 - Main strength: algorithmic thinking and BASIC-style pseudocode
-- Main unresolved technical point: Python indentation and block scope
-- Research connection: the FASTA reader provides normalized sequence input for the future `CLEAVE()` function
-- Git/GitHub status: Session 4 has been archived in this repository
+- Main reinforcement need: Python indentation and block scope
+- Research connection: the FASTA reader supplies normalized sequence input for the future `CLEAVE()` function
 
-## Next Course Target
+## Next course target
 
 **Level I → Lesson I.2**
 
 Functions, parameters, return values, modularity, code organization, and reusable computational components.
 
-## Rule Summary
+## Locked principles
 
-- Adult low-tier tasks must be meaningful, GitHub-uploadable, professionally respectable, biologically or computationally relevant, and never toy drills or childish syntax.
-- The 4 Mandatory exercises must always be challenging, teaching, and substantial enough to preserve and advance skills.
-- Low-energy sessions still require one real progress unit.
-- Prerequisite gaps are rescued, not punished.
-- Hardest/THE Hardest tasks are assigned by evidence, not ego.
+- Adult low-tier tasks remain meaningful, GitHub-uploadable, professionally respectable, and computationally relevant.
+- Mandatory exercises remain substantial even during low-energy sessions.
+- Low-energy work must still produce one real progress unit.
+- Prerequisite gaps are rescued rather than punished.
+- Hardest-level tasks are assigned according to demonstrated readiness.

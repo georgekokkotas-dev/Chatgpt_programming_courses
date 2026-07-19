@@ -1,0 +1,277 @@
+CCP — Level I, Lesson 1, Session 1
+Part 2 — Exercise File
+Mode C: High Energy / Low Fatigue
+Primary Track: Python
+Support Tracks: Pseudocode, CLI, Git
+Rule: No solutions before attempt.
+
+SESSION TARGET
+Build a minimal, meaningful biological sample report script that is clean enough to become the first GitHub-uploadable CCP artifact.
+
+SUBMISSION FORMAT
+Submit your answers in one message using this structure:
+M1:
+SET SAMPLE_ID = "#12345" **QUOTE MARKS MEAN STRING**
+SET ORGANISM_NAME = "H. Sapiens"
+SET SEQ = ATGGCCCCGTAAATGTCGTATAGTGA
+SEQ_COUNT = COUNT(SEQ) **COUNT MEANS GIVE THE COUNT OF INDIVIDUAL CHARACTERS (SYMBOLS, NUMBERS, STRINGS). THE SEQUENCE IS NOT A STRING**
+SET GC_100 = (COUNT(SEQ[0,25], CHAR = C) + COUNT(SEQ[0,25], CHAR = G))/SEQ_COUNT)
+PRINT SAMPLE_ID
+PRINT ORGANISM_NAME
+PRINT SEQ
+PRINT COUNT
+PRINT GC_100
+PRINT TEXT "This is an oligonucleotide from a coding sequence in gene XXX (H. Sapiens). The sequence metadata are presented in this report." 
+PRINT TEXT "We identified that" PRINT SAMPLE_ID "is a" PRINT SEQ_COUNT" oligonucleotide sequence and has a GC% of" PRINT GC_100
+PRINT TEXT "We currently can't comment on the biological meaning of this sequence."
+END
+
+M2:
+sample_id = "#12345"
+organism = "H. Sapiens"
+seq = ["ATGGCCCCGTAAATGTCGTATAGTGA"]
+seq_count = len(seq[0])
+gc_100 = ((seq[0].count("G") + seq[0].count("C"))) / seq_count * 100
+data_source = f'The data were obtained through public datasets (www.genericdatabasesite.site'
+print(sample_id)
+print(organism)
+print(seq)
+print(seq_count)
+print(gc_100)
+print(data_source)
+
+M3: (With help from Gemini)
+sample_id = "#12345"
+organism = "H. Sapiens"
+seq = ["ATGGCCCCGTAAATGTCGTATAGTGA"]
+seq_count = len(seq[0])
+gc_100 = ((seq[0].count("G") + seq[0].count("C"))) / seq_count * 100
+gc_count_estimate = seq_count * gc_100 / 100
+data_source = "www.genericdatabasesite.site"
+print(f"Sample ID: {sample_id}")
+print(f"Organism: {organism}")
+print(f"Sequence: {seq[0]}") 
+print(f"Sequence Length: {seq_count}")
+print(f"GC%: {gc_100}%")
+print(f"Estimated GC Count: {gc_count_estimate}") 
+print(f"Data source: {data_source}")
+print(f'The data were obtained through public datasets: {(data_source)}')
+
+M4:
+cd ~/mnt/disk_drive/script_parent_folder/script_folder/script.py
+python script.py
+git status
+git add script.py
+git commit -m "This is my first learning script. Please be kind with me"
+
+R1:
+R2:
+The sampleID is not an assigned value. That's a name error.
+
+R3:
+R4:
+
+S1:
+SET SAMPLE_ID = "#12345" **QUOTE MARKS MEAN STRING**
+SET ORGANISM_NAME = "H. Sapiens"
+SET SEQ = ATGGCCCCGTAAATGTCGTATAGTGA
+SEQ_COUNT = COUNT(SEQ) **COUNT MEANS GIVE THE COUNT OF INDIVIDUAL CHARACTERS (SYMBOLS, NUMBERS, STRINGS). THE SEQUENCE IS NOT A STRING**
+SET GC_100 = (COUNT(SEQ[0,25], CHAR = C) + COUNT(SEQ[0,25], CHAR = G))/SEQ_COUNT)
+IF
+	GC_100 <= 0 OR GC_11 = NaN
+THEN
+	PRINT TEXT "GC% has an invalid value."
+ELSE IF
+	GC_100 = NA"
+THEN 
+	PRINT TEXT "GC% has no value."
+ELSE
+	PRINT SAMPLE_ID
+	PRINT ORGANISM_NAME
+	PRINT SEQ
+	PRINT COUNT
+	PRINT GC_100
+	PRINT TEXT "This is an oligonucleotide from a coding sequence in gene XXX (H. Sapiens). The sequence metadata are presented in this report." 
+	PRINT TEXT "We identified that" PRINT SAMPLE_ID "is a" PRINT SEQ_COUNT" oligonucleotide sequence and has a GC% of" PRINT GC_100
+	PRINT TEXT "We currently can't comment on the biological meaning of this sequence."
+END IF
+END
+
+S2:
+import math
+
+sample_id = "#12345"
+organism = "H. Sapiens"
+seq = ["ATGGCCCCGTAAATGTCGTATAGTGA"]
+seq_count = len(seq[0])
+gc_100 = ((seq[0].count("G") + seq[0].count("C"))) / seq_count * 100
+gc_count_estimate = seq_count * gc_100 / 100
+data_source = "www.genericdatabasesite.site"
+if gc_100 <= 0 or gc_100 > 100 or math.isnan(gc_100):
+	print(f'GC% has an invalid value.')
+elif gc_100 == None:
+	print(f'GC% had no value.')
+else:
+	print(f"Sample ID: {sample_id}")
+	print(f"Organism: {organism}")
+	print(f"Sequence: {seq[0]}") 
+	print(f"Sequence Length: {seq_count}")
+	print(f"GC%: {gc_100}%")
+	print(f"Estimated GC Count: {gc_count_estimate}") 
+	print(f'The data were obtained through public datasets: {(data_source)}')
+
+S3:
+C:\\Desktop\Project file
+Project_File/
+├── scripts/
+│   └── script1.py
+├── results/
+│   └── Results.csv
+├── notes/
+└── README.md
+    README.txt
+
+A1:
+A2:
+
+MANDATORY CORE — Completion %
+M1. Algorithmic Thinking / Pseudocode — Easy — Learning/Explanation — Mandatory
+Task: Write pseudocode for a biological sample report program.
+The program must:
+1. store a sample ID,
+2. store organism name,
+3. store sequence length,
+4. store GC percentage,
+5. print a readable report,
+6. include one validation idea.
+Expected output: human-readable pseudocode, not Python code.
+Submission format: 6–10 pseudocode lines.
+
+M2. Python Programming / Variables — Easy — Command/Syntax — Mandatory
+Task: Create a Python script skeleton named sample_report.py using these variables:
+sample_id
+organism
+sequence_length
+gc_percent
+data_source
+Do not use the exact values from the worked example. Use your own realistic values.
+Expected output: Python variable assignments plus print statements.
+Submission format: paste your Python code.
+
+M3. Input/Output / Debugging — Pre-Moderate — Application — Mandatory
+Task: Add a simple computed field:
+gc_count_estimate = sequence_length * gc_percent / 100
+Then print it in the report with a label.
+Expected output: report includes the original data and estimated GC count.
+Submission format: paste updated code and describe in one sentence what gc_count_estimate means.
+
+M4. CLI + Git Archive — Pre-Moderate — Command/Syntax — Mandatory
+Task: Write the exact terminal/Git command sequence you would use to:
+1. enter the script folder,
+2. run the script,
+3. check Git status,
+4. stage the script,
+5. commit it with a professional message.
+Expected output: ordered command list.
+Submission format: commands only, one per line.
+
+RECOMMENDED — Mastery %
+R1. Computational Language — Easier — Drill/Trace — Recommended
+Task: For each line below, classify it as DATA, PROCESSING, OUTPUT, or ARCHIVE:
+sample_id = "BIO_007"
+gc_count_estimate = sequence_length * gc_percent / 100
+print("GC estimate:", gc_count_estimate)
+git commit -m "Add sample report script"
+Submission format: four classifications.
+
+R2. Error Interpretation — Easy — Learning/Explanation — Recommended
+Task: Explain what kind of error would likely occur here and why:
+sample_id = "BIO_007"
+print(sampleID)
+Expected output: identify the error type/pattern and the cause.
+Submission format: 2–4 sentences.
+
+R3. Python Programming — Pre-Moderate — Command/Syntax — Recommended
+Task: Improve the printed report so it has:
+1. title line,
+2. separator line,
+3. labeled fields,
+4. units for sequence length,
+5. percentage symbol for GC.
+Expected output: cleaner report formatting.
+Submission format: paste the print section only.
+
+R4. GitHub Respectability — Easy — Learning/Explanation — Recommended
+Task: Write a short README description for this mini-script.
+It must include:
+purpose,
+input/data stored,
+output,
+how to run,
+future extension.
+Expected output: GitHub-ready README paragraph or bullets.
+Submission format: 5 bullets maximum.
+
+STRETCH — Challenge %
+S1. Validation Logic — Moderate — Application — Stretch
+Task: Add one validation rule in pseudocode:
+If sequence_length is less than or equal to 0, the program should not produce a normal report.
+Expected output: pseudocode validation block.
+Submission format: 3–6 pseudocode lines.
+
+S2. Python Conditional Preview — Post-Moderate — Command/Syntax — Stretch
+Task: Try to express the validation from S1 in Python using if / else.
+Expected output: Python conditional structure.
+Submission format: paste the conditional code only.
+Hint: You may use:
+if condition:
+    ...
+else:
+    ...
+
+import math
+
+sample_id = "#12345"
+organism = "H. Sapiens"
+seq = ["ATGGCCCCGTAAATGTCGTATAGTGA"]
+seq_count = len(seq[0])
+gc_100 = ((seq[0].count("G") + seq[0].count("C"))) / seq_count * 100
+gc_count_estimate = seq_count * gc_100 / 100
+data_source = "www.genericdatabasesite.site"
+if gc_100 <= 0 or gc_100 > 100 or math.isnan(gc_100):
+	print(f'GC% has an invalid value.')
+elif gc_100 == None:
+	print(f'GC% had no value.')
+else:
+	print(f"Sample ID: {sample_id}")
+	print(f"Organism: {organism}")
+	print(f"Sequence: {seq[0]}") 
+	print(f"Sequence Length: {seq_count}")
+	print(f"GC%: {gc_100}%")
+	print(f"Estimated GC Count: {gc_count_estimate}") 
+	print(f'The data were obtained through public datasets: {(data_source)}')
+
+S3. Project Architecture — Moderate — Application — Stretch
+Task: Design a clean folder structure for this first CCP mini-project.
+It must include folders for scripts, results, notes, and README.
+Expected output: folder tree.
+Submission format: plain-text folder tree.
+
+RESEARCH / APPLICATION INTEGRATION
+A1. Biological Interpretation — Easy — Learning/Explanation — Research/Application
+Task: Explain what GC percentage can tell us and what it cannot tell us from this tiny script alone.
+Expected output: realistic interpretation, not overclaiming.
+Submission format: 3–5 sentences.
+
+A2. Future Pipeline Thinking — Moderate — Application — Research/Application
+Task: Describe how this single-sample script could later become a CSV-processing pipeline for many samples.
+Include:
+input file,
+loop or table processing,
+validation,
+summary output,
+GitHub archive.
+Expected output: miniature pipeline plan.
+Submission format: 5–8 bullets.
+
+END OF EXERCISE FILE

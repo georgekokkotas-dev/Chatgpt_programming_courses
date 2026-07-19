@@ -17,29 +17,36 @@ Problem → Algorithm → Pseudocode → Implementation → Command Execution �
 ## Current Progress
 
 - Level I — Digital and Algorithmic Foundations
-- Lesson 1 — What is a Computer Program?
+- Lesson 1 — What is a Computer Program? — **Completed**
 - Session 1 — Completed and passed
 - Session 2 — Completed and passed
   - Final corrected report archived in `archive/session-02-final-corrected-report.md`
   - Session files stored in `sessions/level-01-lesson-01-session-02/`
-  - Git status: available through WSL Ubuntu; native Windows CMD Git remains a PATH/setup gap
 - Session 3 — Completed and passed under Mandatory-Core Only adaptation
   - Mandatory-core report archived in `archive/session-03-mandatory-core-report.md`
   - Session files stored in `sessions/level-01-lesson-01-session-03/`
-  - Git status: WSL Git works; local CCP Lessons folder is not yet a Git repository
+- Session 4 — Completed and passed under Mandatory-Core Only adaptation
+  - Final report archived in `archive/session-04-final-report.md`
+  - Session files stored in `sessions/level-01-lesson-01-session-04/`
+  - Session score: 9.3/10
+  - Lesson I.1 overall score: 8.7/10 — Very Good
 
 ## Latest Session Snapshot
 
-**Session 3 — Mixed Programming + CLI + Application / Research Link**
+**Session 4 — Consolidation: FASTA Workflow and Pythonisation**
 
-- Mandatory Completion: 100%
-- Mandatory Mastery: 79.75%
-- Adapted Session Result: PASS
-- Command Fluency: 78%
-- Debugging Maturity: 72%
-- Research Readiness: 66%
-- Main unresolved technical point: `gc_percent` dependent checks must remain inside the valid `sequence_length` branch
-- Git/GitHub status: Git works in WSL; next local target is `git init` / `git add` / `git commit`
+- Mandatory Core: 4/4 completed
+- Session Result: PASS
+- Main strength: algorithmic thinking and BASIC-style pseudocode
+- Main unresolved technical point: Python indentation and block scope
+- Research connection: the FASTA reader provides normalized sequence input for the future `CLEAVE()` function
+- Git/GitHub status: Session 4 has been archived in this repository
+
+## Next Course Target
+
+**Level I → Lesson I.2**
+
+Functions, parameters, return values, modularity, code organization, and reusable computational components.
 
 ## Rule Summary
 

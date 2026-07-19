@@ -2,32 +2,29 @@
 
 **Session title:** Mathematical Statements, Symbols, and Meaning  
 **Status:** Passed  
-**Session grade:** **75/100**
+**Mandatory Exercise Mastery:** **75%**  
+**Overall Exercise Mastery:** **77%**  
+**Submitted Exercises:** **8/13**  
+**Energy/Fatigue Factor:** **E: 4/5 · F: 1/5**  
+**Session grade:** **77/100**
 
-## Major breakthroughs
+## Submitted Exercise Mastery
 
-- Began separating mathematical expressions, fixed statements, and conditions with free variables.
-- Identified the hypothesis and conclusion of an implication and used counterexamples to challenge false claims.
-- Translated ordinary mathematical language into symbols such as `∈`, `∉`, `≠`, and `⇒`.
-- Evaluated a function at a specific input and connected the result to a point on its graph.
-- Recognized that mathematical notation must be interpreted according to its logical role, not merely its visual form.
+| Submitted exercise | Mastery | Reason for grade |
+|---|---:|---|
+| M1 — Mathematical Language / Logic | 68% | Correctly classified the expression, fixed statement, and subjective sentence, but treated `x + 3 = 10` and `x ∈ R` as fixed statements rather than open predicates; implication wording was also imprecise. |
+| M2 — Implication Structure | 90% | All four truth judgements were correct and the false claims received valid counterexamples; hypotheses and conclusions were understood, although they were not itemized separately for every line. |
+| M3 — Symbol Translation | 85% | All five translations were correct; the requested identification of the principal relation used in each item was not explicitly supplied. |
+| M4 — Function Language | 55% | The value `f(3)=5` was reached, but the input variable, output expression, function rule, and graph-point notation were confused. |
+| R2 — Domain Awareness | 78% | Four of five restrictions were correct; `ln(x)` was left unanswered and the requested verbal descriptions were incomplete. |
+| R3 — Equality vs Implication | 65% | The distinction between `=` and `⇒` was recognized, but implication was still described as uncertainty and the truth-value explanation remained incomplete. |
+| R4 — Programming Command Learning | 82% | Assignment and comparison commands were mostly correct; the final task did not store the Boolean value in the required variable `condition`. |
+| RI1 — Genomic Classification Logic | 90% | The symbolic implication, hypothesis, and conclusion were correct, and the clinical caution was strong; some wording still blended criteria satisfaction, pathogenicity, and actionability. |
 
-## Major mistakes
+## Comments
 
-- Classified open formulas such as `x + 3 = 10` and `x ∈ R` as complete statements too quickly.
-- Treated implication as uncertainty rather than as a mathematical claim with a truth value.
-- Confused a function rule, a function value, and the corresponding graph point.
-- Omitted the real-number domain restriction `x > 0` for `ln(x)`.
-- Used a different Python variable name when the requested name was `condition`.
-
-## Major corrections
-
-- A formula containing an unspecified free variable is treated as a predicate or condition unless the variable is fixed or quantified.
-- `P ⇒ Q` is false only when `P` is true and `Q` is false.
-- For `f(x) = 2x - 1`, `f(3) = 5`, and the corresponding graph point is `(3, 5)`.
-- Over the real numbers, `ln(x)` requires `x > 0`.
-- The requested Python form is `condition = x > 3`.
-
-## Grade basis
-
-The recorded mandatory mastery was approximately 75%, with all four Mandatory Core exercises passed and 8 of 13 total exercises attempted.
+- **Mandatory Exercise Mastery calculation:** `(68 + 90 + 85 + 55) / 4 = 74.5%`, rounded to **75%**.
+- **Overall Exercise Mastery calculation:** `(68 + 90 + 85 + 55 + 78 + 65 + 82 + 90) / 8 = 76.625%`, rounded to **77%**.
+- R1, S1, S2, S3, and RI2 were not submitted and therefore contribute neither zeroes nor points to mastery.
+- Submission count and mastery are intentionally separate: omission reduces `Submitted Exercises`, not the mastery denominator.
+- The main continuing vulnerability after this session was distinguishing open formulas with free variables from complete statements with fixed truth values.

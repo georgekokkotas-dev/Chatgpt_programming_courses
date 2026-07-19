@@ -1,84 +1,89 @@
 # MCP — Level I, Lesson 1
 
 **Lesson title:** Mathematical Statements, Symbols, and Meaning  
-**Lesson status:** Completed and locked  
-**Overall Lesson grade:** **90/100**
+**Reevaluation scope:** Sessions 1–3, as explicitly requested  
+**Mandatory Exercise Mastery:** **80%**  
+**Overall Exercise Mastery:** **76%**  
+**Submitted Exercises:** **27/39**  
+**Overall Energy/Fatigue Factor:** **E: 4.3/5 · F: 1.3/5**  
+**Overall Lesson grade for the reevaluated scope:** **76/100**
 
-## Lesson theory summary
+## Lesson Theory Summary
 
-Lesson 1 established the language needed to read, write, and criticize mathematics precisely. Its theory covered:
+The reevaluated sessions developed mathematical language, statements and predicates, implication and equivalence, functions, domains, truth sets, interval and set-builder notation, legal algebraic transformation, proof direction, programming comparisons, biological model restrictions, and genomic filtering logic.
 
-- mathematical expressions, statements, predicates, and conditions;
-- free variables and fixed truth values;
-- implication, converse, counterexample, and equivalence;
-- equations, identities, formulas, and definitions;
-- sets, membership, interval notation, and set-builder notation;
-- domains, truth sets, and dangerous structures such as denominators and square roots;
-- functions, function rules, function values, graph points, domains, and codomains;
-- variables, parameters, constants, assumptions, units, and dimensionless quantities;
-- mathematical equality versus programming assignment and comparison;
-- scientific validity across mathematical, computational, biological, and clinical layers.
+## Lesson Exercises Summary
 
-The central lesson principle was:
+- **Session 1:** 8/13 submitted; emphasis on statements, implications, symbol translation, functions, domains, Python comparisons, and genomic classification logic.
+- **Session 2:** 13/13 submitted; emphasis on equality, equivalence, legal transformations, proofs, shifted domains, counterexamples, programming equality, and clinical-genetics logic.
+- **Session 3:** 6/13 submitted; emphasis on truth sets, domains, dangerous structures, combined restrictions, biological validity, and genomic filtering.
 
-> A symbol has no scientifically useful meaning until its role, domain, units, and context are sufficiently defined.
+Omitted exercises are recorded in the submission totals but do not enter either mastery denominator.
 
-## Lesson exercises summary
+## Submitted Exercise Mastery
 
-Each of the four sessions used the locked 13-exercise structure:
+| Submitted exercise | Mastery | Reason for grade |
+|---|---:|---|
+| S1-M1 — Mathematical Language / Logic | 68% | Several classifications were correct, but open predicates were treated as fixed statements and implication wording remained imprecise. |
+| S1-M2 — Implication Structure | 90% | Truth values and counterexamples were correct; P and Q were understood but not itemized for each line. |
+| S1-M3 — Symbol Translation | 85% | All translations were correct; relation-type labels were omitted. |
+| S1-M4 — Function Language | 55% | The value was found, but the input, output expression, rule, and graph-point notation were confused. |
+| S1-R2 — Domain Awareness | 78% | Four restrictions were correct; `ln(x)` and some verbal explanations were missing. |
+| S1-R3 — Equality vs Implication | 65% | The symbols were distinguished, but implication was still treated as uncertain and truth-value reasoning was incomplete. |
+| S1-R4 — Programming Command Learning | 82% | Most Python commands were correct; the required `condition` variable was not used. |
+| S1-RI1 — Genomic Classification Logic | 90% | Formal implication structure and clinical caution were strong; criteria, pathogenicity, and actionability were partly blended. |
+| S2-M1 — Object Classification | 82% | Most objects were classified correctly; one relation remained uncertain and explanations were largely omitted. |
+| S2-M2 — Legal Transformation | 58% | Several relations were correct, but equivalence was used to repair false implications and `x=-3` was missed. |
+| S2-M3 — Equality Discipline | 78% | Solutions were mostly correct; one copy error and inconsistent reversible-symbol use remained. |
+| S2-M4 — Function Rule vs Value | 74% | Evaluation and graph point were correct; the function rule was confused with domain/codomain. |
+| S2-R1 — Implication vs Equivalence | 62% | Several directions were correct, but the square and divisibility cases were confused. |
+| S2-R2 — Domain and Equality | 50% | Two domains were correct and two shifted domains were wrong; requested classifications and explanations were omitted. |
+| S2-R3 — Symbol Repair | 58% | Intended symbols were often identified, but complete repairs and justification were insufficient. |
+| S2-R4 — Programming Equality | 100% | All requested Python commands and explanations were correct. |
+| S2-S1 — Counterexample Precision | 92% | All counterexamples were valid and directly refuted the claims. |
+| S2-S2 — Mini-Proof with Legal Steps | 35% | The result was true, but the argument ran backward and did not prove the implication from its assumption. |
+| S2-S3 — Equivalence Chain | 55% | The solution was correct, but a reversible algebraic step was wrongly rejected. |
+| S2-RI1 — Clinical Genetics Logic | 75% | Clinical caution and translations were strong; logical-strength ranking was inconsistent. |
+| S2-RI2 — Session Archive Note | 90% | The note was complete and relevant, with only minor archive-standardization weakness. |
+| S3-M1 — Condition vs Truth Set | 92% | Final classifications and truth sets were correct; notation remained slightly informal. |
+| S3-M2 — Domain from Dangerous Structures | 96% | All domains were correct; the requested separation of structure, condition, and final domain was not always explicit. |
+| S3-M3 — Combined Domain Conditions | 90% | All final domains were correct; one supporting endpoint note conflicted with the correct final answer. |
+| S3-M4 — Truth Set vs Domain | 90% | Final solutions and domains were correct; set-builder notation remained redundant. |
+| S3-RI1 — Biological Validity Conditions | 78% | Scientific intuition was strong; algebraic and biological restrictions were mixed and `N` was over-restricted. |
+| S3-RI2 — Genomic Filtering | 95% | The filtering logic and actionability warning were correct, with only minor wording imprecision. |
 
-- 4 Mandatory Core;
-- 4 Recommended;
-- 3 Stretch;
-- 2 Research Integration.
+## Major Breakthroughs
 
-Recorded coverage:
+- Strong counterexample construction and growing logical discipline.
+- Stable separation of domain, truth set, universe, and filtered subset by Session 3.
+- Correct handling of square-root and denominator restrictions after correction.
+- Clear distinction between mathematical equality and Python assignment/comparison.
+- Strong scientific instinct against treating mathematical validity as biological or clinical proof.
+- Major Session 3 result: six submitted exercises demonstrated 90% mastery even though seven assigned exercises were omitted.
 
-- **Session 1:** 8/13 attempted; Mandatory Core passed.
-- **Session 2:** 13/13 attempted; full coverage.
-- **Session 3:** 6/13 attempted; all Mandatory Core and both Research Integration exercises completed.
-- **Session 4:** 9/13 attempted; review, mini-assessment, portfolio, and lesson closure completed.
+## Major Mistakes
 
-The exercises moved from basic classification and symbol translation toward domain construction, proof direction, set-builder notation, biological model restrictions, genomic filtering, Python comparisons, and publication-style scientific interpretation.
+- Open formulas with free variables were initially treated as complete statements.
+- Equivalence was sometimes used as a repair symbol for false implications.
+- Proof direction was reversed in a dedicated proof exercise.
+- Shifted domain restrictions and interval endpoints caused repeated errors.
+- Function rule, value, domain, and codomain were sometimes blended.
+- Mathematical restrictions and biological modelling assumptions were occasionally mixed.
 
-## Major breakthroughs
+## Major Corrections
 
-- Developed a stable distinction between expressions, predicates, fixed statements, equations, implications, and equivalences.
-- Learned to use counterexamples as a formal test of mathematical claims.
-- Stabilized domain and truth-set reasoning for square roots, denominators, and combined expressions.
-- Connected functions to their rules, evaluated values, graph points, domains, and codomains.
-- Improved set-builder and interval notation.
-- Separated mathematical equality from Python assignment and comparison.
-- Began treating units, dimensions, parameter roles, assumptions, and scientific context as essential parts of mathematical meaning.
-- Demonstrated strong modelling instinct by challenging biologically meaningless or clinically overreaching notation.
-
-## Major mistakes
-
-- Treated open formulas with free variables as complete statements too quickly.
-- Interpreted implication as uncertainty and sometimes used equivalence to “repair” a false implication.
-- Reversed proof direction instead of assuming the hypothesis and deriving the conclusion.
-- Applied restrictions to the outer variable rather than to the dangerous inner expression.
-- Made interval endpoint and denominator-exclusion errors.
-- Omitted `|x|` when passing from `sqrt(x²)` to solutions of quadratic equations.
-- Confused function names, function rules, function values, and domain/codomain declarations.
-- Used “variable” when “parameter” was more accurate.
-- Assigned physical units to dimensionless proportions.
-- Omitted non-zero conditions in cancellation and minor Python syntax such as the function-definition colon.
-
-## Major corrections
-
-- Free-variable formulas are predicates until the variable is fixed or quantified.
-- `P ⇒ Q` is false only when `P` is true and `Q` is false.
-- `P ⇔ Q` requires both directions to be true.
-- A proof of `P ⇒ Q` begins by assuming `P` and deriving `Q`.
-- `sqrt(A)` requires `A ≥ 0`; `1/sqrt(A)` requires `A > 0`; `1/A` requires `A ≠ 0`.
-- `sqrt(x²) = |x|`.
+- Free-variable formulas are predicates unless fixed or quantified.
+- `P ⇔ Q` requires both implications to hold.
+- A proof of `P ⇒ Q` begins with P and derives Q.
+- `sqrt(A)` requires `A≥0`; `1/sqrt(A)` requires `A>0`; `1/A` requires `A≠0`.
+- `sqrt(x²)=|x|`.
 - Clean set-builder notation is `{x ∈ S | condition}`.
-- `f` names a function, `f(x)` states or evaluates its rule, and `f(a)` is a value at a specific input.
-- `f: A → B` specifies domain and codomain, not the function rule.
-- Frequencies and proportions are dimensionless.
-- Mathematical equality, Python assignment, and Python comparison are separate operations.
+- Mastery and submission coverage are separate quantities.
 
-## Lesson result
+## Comments
 
-Lesson 1 was passed and locked. The final lesson report recorded **90% mastery**, represented here as an overall lesson grade of **90/100**.
+- **Mandatory Exercise Mastery calculation:** the 12 submitted Mandatory exercises total `958/1200 = 79.83%`, rounded to **80%**.
+- **Overall Exercise Mastery calculation:** the 27 submitted exercises total `2063/2700 = 76.41%`, rounded to **76%**.
+- **Overall Energy/Fatigue Factor:** arithmetic mean across Sessions 1–3: `E=(4+4+5)/3=4.33`, `F=(1+2+1)/3=1.33`, reported as **E: 4.3/5 · F: 1.3/5**.
+- Session 4 is intentionally excluded from this reevaluation because the requested scope named Sessions 1, 2, and 3. Its existing README and locked result remain unchanged.
+- A skipped exercise is not a failed exercise. It lowers submission coverage only; it does not enter the mastery average.

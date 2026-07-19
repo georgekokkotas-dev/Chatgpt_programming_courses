@@ -2,34 +2,27 @@
 
 **Session title:** Conditions, Domains, and Truth Sets  
 **Status:** Passed strongly after revision  
-**Session grade:** **75/100**
+**Mandatory Exercise Mastery:** **92%**  
+**Overall Exercise Mastery:** **90%**  
+**Submitted Exercises:** **6/13**  
+**Energy/Fatigue Factor:** **E: 5/5 · F: 1/5**  
+**Session grade:** **90/100**
 
-## Major breakthroughs
+## Submitted Exercise Mastery
 
-- Stabilized the distinction between a universe, a domain, a truth set, and a filtered subset.
-- Correctly handled denominator exclusions, square-root restrictions, and combined domain conditions.
-- Repaired the formal solution of `x² = 16` by introducing `|x| = 4` before concluding `x = ±4`.
-- Improved set-builder notation and connected truth-set reasoning to genomic filtering.
-- Separated mathematical validity, computational validity, biological validity, and clinical actionability.
+| Submitted exercise | Mastery | Reason for grade |
+|---|---:|---|
+| M1 — Condition vs Truth Set | 92% | The final classifications and truth sets were correct; notation for `R` and interval membership remained slightly informal. |
+| M2 — Domain from Dangerous Structures | 96% | All four real-number domains were correct after revision; the dangerous structure and intermediate condition were not always written as separately as requested. |
+| M3 — Combined Domain Conditions | 90% | All final domains were correct, including the denominator-square-root case; one supporting note used `(1,∞)` before giving the correct final endpoint `[1,∞)`. |
+| M4 — Truth Set vs Domain | 90% | The equations, domains, and truth sets were correct, including the `|x|` bridge; the set-builder form for the rational inequality was redundant rather than fully clean. |
+| RI1 — Biological Validity Conditions | 78% | The `K=0` failure and biological modelling intuition were strong; mathematical and biological restrictions were mixed, and `N` was over-restricted instead of beginning from `N≥0`, `K≠0`. |
+| RI2 — Genomic Filtering as a Truth Set | 95% | The universe, conditions, filtered-subset classification, plain-language translation, and actionability warning were all correct; only minor wording imprecision remained. |
 
-## Major mistakes
+## Comments
 
-- Initially confused the truth set with the background universe of real numbers.
-- Used incorrect endpoint inclusion or exclusion in interval notation.
-- Sometimes included forbidden denominator values through bracket errors.
-- Omitted the absolute-value bridge in `sqrt(x²) = |x|`.
-- Used understandable but non-standard set-builder notation.
-- Gave biological restrictions on population parameters before clearly separating them from raw algebraic restrictions.
-
-## Major corrections
-
-- A truth set contains exactly the values that make a condition true.
-- `sqrt(A)` requires `A ≥ 0`, while `1/sqrt(A)` requires `A > 0`.
-- `x ≠ a` is written as `(-∞, a) ∪ (a, ∞)`.
-- `sqrt(x²) = |x|`; therefore `x² = 16` gives the truth set `{-4, 4}`.
-- Clean set-builder form is `{x ∈ R | condition}`.
-- For the logistic factor `N(1 - N/K)`, raw algebra requires `K ≠ 0`, while biological modelling normally requires `N ≥ 0` and `K > 0`.
-
-## Grade basis
-
-The final report recorded 90–92% Mandatory Mastery, 46% coverage, and 73–76% overall session mastery. The consolidated session grade is recorded here as 75/100.
+- **Mandatory Exercise Mastery calculation:** `(92 + 96 + 90 + 90) / 4 = 92%`.
+- **Overall Exercise Mastery calculation:** `(92 + 96 + 90 + 90 + 78 + 95) / 6 = 90.17%`, rounded to **90%**.
+- R1–R4 and S1–S3 were not submitted and are excluded completely from the mastery denominator.
+- The earlier 73–76% overall figure mixed mastery with incomplete coverage. Under the corrected rule, the six submitted exercises produce **90% Overall Exercise Mastery**, while submission remains separately recorded as **6/13**.
+- This was the clearest breakthrough in the reevaluation: low coverage did not mean low mastery of the work actually completed.

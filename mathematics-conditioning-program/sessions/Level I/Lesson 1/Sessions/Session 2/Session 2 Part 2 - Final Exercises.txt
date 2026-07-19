@@ -1,0 +1,157 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 2
+Part 2 — Final Exercises
+Theme: Mathematical Objects and Equality Discipline
+
+Rules:
+- Write reasoning, not only final answers.
+- Use =, ⇒, and ⇔ carefully.
+- Programming gaps are separate from mathematical mistakes.
+
+MANDATORY CORE
+
+M1 — Object Classification
+Classify each as:
+A) expression,
+B) equation/condition,
+C) implication,
+D) equivalence,
+E) membership statement/condition,
+F) programming command.
+
+1. x + 5
+2. x + 5 = 12
+3. x > 4 ⇒ x > 1
+4. x + 2 = 7 ⇔ x = 5
+5. x ∈ R
+6. x = 7
+7. x == 7
+8. y = f(x)
+
+Explain every classification.
+
+M2 — Legal Transformation
+For each line pair, decide whether ⇒ or ⇔ is appropriate and explain why.
+
+1. x + 3 = 10 ___ x = 7
+2. x = 7 ___ x + 3 = 10
+3. x > 5 ___ x > 2
+4. x > 2 ___ x > 5
+5. x² = 9 ___ x = 3
+6. x = 3 ___ x² = 9
+
+Use real numbers unless stated otherwise.
+
+M3 — Equality Discipline
+Solve and verify by substitution. Use ⇔ only for reversible steps.
+
+1. x - 4 = 9
+2. 2x = 14
+3. x/3 = 5
+4. 2x - 1 = 9
+
+M4 — Function Rule Versus Value
+Consider:
+f: R → R,  f(x) = 3x + 2
+
+1. State the function rule.
+2. Identify the input variable.
+3. Calculate f(4).
+4. State the corresponding graph point.
+5. Explain the difference between f(x) = 3x + 2 and f(4) = 14.
+
+RECOMMENDED
+
+R1 — Implication Versus Equivalence
+For each pair decide:
+A) P ⇒ Q only,
+B) Q ⇒ P only,
+C) P ⇔ Q,
+D) neither direction always true.
+
+1. P: x = 2; Q: x² = 4
+2. P: x > 10; Q: x > 1
+3. P: x ≠ 0; Q: x² > 0
+4. P: x is divisible by 6; Q: x is divisible by 3
+5. P: x + 1 = 4; Q: x = 3
+
+Give counterexamples where needed.
+
+R2 — Domain and Equality
+Write each real-number domain condition in symbols and words, then classify it as a statement or predicate.
+
+1. f(x) = 1/x
+2. g(x) = sqrt(x - 2)
+3. h(x) = ln(x)
+4. q(x) = 1/(x + 5)
+
+R3 — Symbol Repair
+Rewrite each line with correct mathematical notation and state what it was probably trying to say.
+
+1. x + 3 ⇒ 10
+2. x = positive
+3. x > 5 = x > 2
+4. f(2) ⇒ 7
+5. V ∈ C = V ∈ P
+
+R4 — Programming Equality
+Write Python-style commands to:
+1. assign 12 to x;
+2. test whether x equals 12;
+3. test whether x is greater than 5;
+4. test whether x is not equal to 0;
+5. store x > 5 in condition;
+6. explain = versus == in one comment.
+
+STRETCH
+
+S1 — Counterexample Precision
+Give a counterexample and explanation for each false claim.
+
+1. x² = 16 ⇔ x = 4
+2. x > 0 ⇔ x² > 0
+3. x ∈ R ⇔ x ∈ Z
+4. x > 3 ⇒ x > 10
+
+S2 — Mini-Proof With Legal Steps
+Prove:
+If x = 4, then 2x + 1 = 9.
+
+Include the assumption, substitution, simplification, conclusion, and why the argument proves the required direction.
+
+S3 — Equivalence Chain
+Complete legally:
+3x + 2 = 17
+___ 3x = 15
+___ x = 5
+
+Explain why every valid step is reversible and why the chain links the first and last conditions.
+
+RESEARCH INTEGRATION
+
+RI1 — Clinical Genetics Logic
+Let:
+C = variants satisfying classification criteria;
+P = clinically actionable variants;
+V = a specific variant.
+
+Compare:
+A. V ∈ C ⇒ V ∈ P
+B. V ∈ C ⇔ V ∈ P
+C. V ∈ P ⇒ V ∈ C
+
+For each:
+1. translate into plain English;
+2. assess the strength of the claim;
+3. explain why a clinical report must not confuse the forms.
+
+RI2 — Session Archive Note
+Create a six-line archive note containing:
+1. session title;
+2. energy/fatigue;
+3. three symbols trained;
+4. one distinction trained;
+5. one mistake risk;
+6. one archive filename.
+
+END OF EXERCISES

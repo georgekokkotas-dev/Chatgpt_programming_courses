@@ -1,0 +1,142 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 1
+Part 2 — Final Exercises
+Theme: Mathematical Statements, Symbols, and Meaning
+
+Rules:
+- Write reasoning, not only final answers.
+- Do not use solutions before attempting.
+- Programming gaps are separate from mathematical mistakes.
+
+MANDATORY CORE
+
+M1 — Mathematical Language and Logic
+Classify each item as:
+A) mathematical statement,
+B) mathematical expression,
+C) condition/predicate,
+D) non-mathematical subjective sentence.
+
+1. x + 3
+2. x + 3 = 10
+3. 7 > 2
+4. x ∈ R
+5. This function is elegant.
+6. If x > 4, then x > 1.
+
+Give one sentence explaining every classification.
+
+M2 — Implication Structure
+For each implication, identify hypothesis P, conclusion Q, truth or falsity over R, and one counterexample when false.
+
+1. x > 5 ⇒ x > 0
+2. x > 0 ⇒ x > 5
+3. x = 2 ⇒ x² = 4
+4. x² = 4 ⇒ x = 2
+
+M3 — Symbol Translation
+Translate into symbols and identify the main relation.
+
+1. x is a real number.
+2. x is not equal to zero.
+3. If x is greater than 3, then x is positive.
+4. y is the value of function f at input x.
+5. a belongs to A, but b does not belong to A.
+
+M4 — Function Language
+Consider:
+f: R → R,  f(x) = 2x - 1
+
+Answer:
+1. What is the input variable?
+2. What is the output expression?
+3. What does f(3) mean in words?
+4. Is f(x) = 2x - 1 a statement, expression, rule, or equation? Defend the classification.
+5. Write one scientific sentence describing the function.
+
+RECOMMENDED
+
+R1 — Converse
+Write the converse of each implication and decide whether the converse is true or false.
+
+1. x > 10 ⇒ x > 1
+2. x = 0 ⇒ x² = 0
+3. x = y ⇒ x + 2 = y + 2
+4. n is divisible by 6 ⇒ n is divisible by 3
+
+R2 — Domain Awareness
+State the real-number restriction in symbols and words.
+
+1. 1/x
+2. sqrt(x)
+3. ln(x)
+4. 1/(x - 2)
+5. sqrt(x - 5)
+
+R3 — Equality Versus Implication
+Explain the difference between:
+A) x = 3
+B) x > 5 ⇒ x > 3
+
+Include:
+1. the mathematical object represented by each line;
+2. whether each can be true or false;
+3. why = and ⇒ are not interchangeable.
+
+R4 — Programming Commands
+Write Python-style commands to:
+1. store x = 7;
+2. test x > 3;
+3. test x == 3;
+4. test x != 0;
+5. store the truth value of x > 3 in a variable named condition.
+
+STRETCH
+
+S1 — Counterexamples
+For each false implication, give a counterexample and explain why it destroys the implication.
+
+1. x² > 4 ⇒ x > 2
+2. x ≠ 0 ⇒ x > 0
+3. x² = y² ⇒ x = y
+
+S2 — Mini-Proof
+Prove in complete mathematical sentences:
+If x > 3, then x + 2 > 5.
+
+Include:
+1. the starting assumption;
+2. the operation performed on both sides;
+3. the conclusion;
+4. why the step is legal.
+
+S3 — Statement Repair
+Rewrite each sentence precisely.
+
+1. x is bigger.
+2. The equation works.
+3. f is the same.
+4. The number is in the set.
+5. If it is positive, it is true.
+
+RESEARCH INTEGRATION
+
+RI1 — Genomic Classification Logic
+Consider:
+If variant V satisfies pathogenicity criteria C, then V belongs to the set P of clinically actionable variants.
+
+1. Write the implication symbolically.
+2. Identify the hypothesis.
+3. Identify the conclusion.
+4. Explain why the definition of C matters.
+5. Explain why the implication is not yet biological proof of causation.
+
+RI2 — Session Archive Note
+Create a five-line archive note containing:
+1. session title;
+2. three symbols learned;
+3. one distinction learned;
+4. one mistake risk;
+5. one research connection.
+
+END OF EXERCISES

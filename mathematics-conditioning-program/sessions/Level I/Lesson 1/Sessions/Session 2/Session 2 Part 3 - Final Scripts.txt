@@ -1,0 +1,25 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 2
+Part 3 — Final Scripts
+
+No standalone executable script was submitted in this mathematics session.
+The final corrected Python equality and condition extract is preserved below.
+
+```python
+x = 12
+
+is_twelve = x == 12
+is_greater_than_five = x > 5
+is_nonzero = x != 0
+condition = x > 5
+
+print(is_twelve)
+print(is_greater_than_five)
+print(is_nonzero)
+print(condition)
+```
+
+Locked distinction:
+- In mathematics, `x = 12` states equality or a condition.
+- In Python, `x = 12` assigns.
+- In Python, `x == 12` compares.

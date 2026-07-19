@@ -1,0 +1,77 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 4
+Part 3 — Final Scripts
+
+Final corrected implementation of:
+h(t) = h0 e^(-kt)
+for h0 = 100, k = 0.2, t = 5.
+
+PYTHON
+
+```python
+import math
+
+
+def formula(h0: float, k: float, t: float) -> float:
+    return h0 * math.exp(-k * t)
+
+
+h0 = 100.0
+k = 0.2
+t = 5.0
+
+result = formula(h0, k, t)
+print(result)
+```
+
+Expected output:
+36.787944117144235
+
+R
+
+```r
+formula <- function(h0, k, t) {
+  h0 * exp(-k * t)
+}
+
+h0 <- 100
+k <- 0.2
+t <- 5
+
+result <- formula(h0, k, t)
+print(result)
+```
+
+Expected output:
+36.78794
+
+JULIA
+
+```julia
+function formula(h0, k, t)
+    return h0 * exp(-k * t)
+end
+
+h0 = 100.0
+k = 0.2
+t = 5.0
+
+result = formula(h0, k, t)
+println(result)
+```
+
+Expected output:
+approximately 36.7879441171
+
+Also locked during this session:
+
+```python
+G0 = 2.0
+r = 0.05
+t = 4.0
+G = G0 * (1 + r * t)
+print(G)
+```
+
+Expected output:
+2.4

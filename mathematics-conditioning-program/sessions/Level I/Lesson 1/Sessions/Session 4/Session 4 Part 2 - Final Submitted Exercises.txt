@@ -1,0 +1,174 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 4
+Part 2 — Final Submitted Exercises
+Student: George Kokkotas
+Energy: 5/5
+Fatigue: 0/5
+
+Exercise 1 — Mathematical Object Classification
+
+P is the output and P(t) is the dependent variable. It means this formula calculates P values.
+t is the independent variable. It is the main independent variable that P is associated with.
+P0 is the initial value for P. P(t) takes into consideration the initial value this function starts with.
+r and m are variables. They affect the independent variable.
+1 is a constant variable. It fixes the initial value to a specific point in timespace.
+1 + rt is the expression which influences the initial value. In this specific case, it could be a rate of change.
+= is the equation symbol.
+
+Exercise 2 — Expression, Equation, Identity, Formula, or Definition
+
+a. 4x + 7: expression. There is no fixed outcome.
+b. 4x + 7 = 19: equation. It asks what the x value is, since there is a fixed outcome.
+c. (x + 1)^2 = x^2 + 2x + 1: identity. It holds true for all numbers on both sides.
+d. A = pi r^2: formula. It describes a specific relationship, in this case a circle's area.
+e. q := n_A/n: definition. It means q is a shortcut for n_A/n.
+
+Exercise 3 — Translation from Scientific Language to Mathematics
+
+n_AA = N * p_AA
+
+n_AA is the number of AA-carrying individuals.
+N is the total population.
+p_AA is the proportion of the total population that carries genotype AA, which is the genotype frequency.
+
+There are no SI units for this. I would classify them as:
+n_AA = genotype/individuals^2
+p_AA = genotype/individuals
+N = individuals
+
+The domain for this equation is R. It takes input from Z in the case of N and R in the case of p_AA. The scientific domain is N for a given population and it gives an n_AA range.
+
+Exercise 4 — Function Language and Domain
+
+a. Input variable: x.
+b. Output: f(x).
+c. Excluded value: +3.
+d. Domain: {x belongs to R | x != 3} or R / {3}.
+e. f(4) is still a function. It has function notation and asks for a specific input rather than all possible x.
+f. f(4) = 9. f(4) = (2 * 4 + 1)/(4 - 3) = 9/1 = 9.
+
+Exercise 5 — Ambiguous Notation Repair
+
+Ambiguities identified:
+- What is the domain?
+- What is the range?
+- How are the variables defined?
+- What is the independent variable?
+- What is the dependent variable?
+- What is f?
+- What is r?
+- What is N?
+
+Provisional interpretation:
+This looks like a time-independent growth factor where some frequency influences the rate, although the model is linear.
+My best guess is:
+f = genotype frequency;
+r = growth rate involving births, deaths, immigration, and emigration;
+N = total population count.
+It may assume that several genotypes affect how the growth rate changes.
+
+Exercise 6 — Legal and Illegal Transformations
+
+a. 3(x + 2) = 3x + 6: correct.
+b. (x + 2)/x = 1 + 2: illegal. It should be 1 + 2/x.
+c. 2x + 5 = 11 ⇒ 2x = 6: correct.
+d. a(b + c) = ab + ac: correct.
+e. x^2 = 9 ⇒ x = 3: incomplete; x = -3 was omitted.
+f. ab/a = b: correct.
+
+Exercise 7 — Mathematical Statement Versus Programming Assignment
+
+Mathematical x = 5 is a condition asking whether x is equal to 5.
+Python x = 5 assigns 5 to x.
+
+R:
+x <- 5
+
+Julia:
+x = 5
+
+Python x == 5 is valid and returns TRUE after assigning x = 5. It means: Is x equal to 5?
+
+Exercise 8 — Function Implementation in Three Languages
+
+Formula:
+h(t) = h0 * e^(-kt)
+
+Algorithm:
+Assign h0, k, and t their values. Create a function for h(t), calculate the result, and print it.
+
+Python submission:
+import math
+h0 = 100
+k = 0.2
+t = 5
+def formula(h0, k, t)
+    h = h0 * math.exp(-k * t)
+    return h
+result = formula(h0, k, t)
+print(result)
+
+R submission:
+h0 <- 100
+k <- 0.2
+t <- 5
+formula <- function(h0, k, t)
+    {h <- h0 * exp(-k * t)
+     return(h)}
+result <- formula(h0, k, t)
+print(result)
+
+Julia:
+Not submitted.
+
+Expected output:
+R: 36.78794
+Python: 36.787944117144235
+
+Likely errors:
+R: forgetting exp and writing e^(-kt).
+Python: forgetting the colon and forgetting math.exp after import math.
+
+Exercises 9–12
+
+Not submitted in the final working file.
+
+Exercise 13 — Publication-Style Mathematical Description
+
+Model equation:
+G(t) = G0(1 + rt)
+
+The model aims to explain whether, why, and how the genetic background of a given population influences its growth rate.
+
+Definitions submitted:
+G(t) is the dependent variable describing eventual genetic influence on a given population.
+G0 is the initial genetic influence encountered in a specific area at time zero.
+r is a growth-rate quantity based on births, deaths, emigration, and immigration relative to population size.
+t is time, measured in weeks.
+
+Submitted domain statement:
+The quantities can hold values from R and N depending on their role.
+
+Submitted units:
+G(t): influence value.
+G0: initial influence value.
+r: individuals/count.
+t: weeks.
+
+Submitted assumptions:
+The model assumes immigration and emigration and an r-model of population growth. Data would be required to test whether a carrying-capacity model is more appropriate.
+
+Submitted interpretation and limitations:
+The model aims to explain genetic-background influence on population growth. Limitations include minimal r values, lack of observational methods, and outside parameters such as anthropogenic factors.
+
+Submitted pseudocode:
+SET G0 = 100
+SET r = 0.2
+SET t = t
+FUNCTION G, SET VARIABLES G0, r, t
+    G = G0 * (1 * r * t)
+    RETURN G
+SET RESULT FUNCTION G
+PRINT RESULT
+
+END OF SUBMITTED EXERCISES

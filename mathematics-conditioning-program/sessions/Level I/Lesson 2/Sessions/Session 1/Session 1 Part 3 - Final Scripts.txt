@@ -1,0 +1,12 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 2 — Session 1
+Part 3 — Final Scripts
+
+No final standalone script was submitted for this session.
+
+The programming exercise concerning Python and R numeric types was not completed in the final submission because of fatigue. No code has been invented or retroactively attributed to the student.
+
+Relevant mathematical-programming distinction locked by the session:
+- a programming numeric type is an implementation/storage category;
+- a mathematical number system is a mathematical set;
+- a floating-point value such as 0.5 may be stored as a general floating type even though mathematically 0.5 ∈ Q.

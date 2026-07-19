@@ -1,0 +1,117 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 3
+Part 1 — Final Theory
+Topic: Conditions, Domains, and Truth Sets
+
+1. CONDITION AND TRUTH SET
+
+A condition or predicate contains a variable whose value is not yet fixed.
+Its truth set is the set of all values that make the condition true.
+
+Examples over R:
+x > 2 has truth set (2, ∞).
+x ≤ -1 has truth set (-∞, -1].
+x = 5 has truth set {5}.
+x² = 9 has truth set {-3, 3}.
+
+The universe is the background set under consideration.
+The truth set is usually a subset of that universe.
+
+2. DOMAIN
+
+The domain of a function is the set of allowed inputs for which its rule is mathematically defined.
+
+Dangerous structures over the real numbers:
+
+Denominator:
+1/A requires A ≠ 0.
+
+Square root:
+sqrt(A) requires A ≥ 0.
+
+Square root in a denominator:
+1/sqrt(A) requires A > 0.
+
+3. COMBINED RESTRICTIONS
+
+For
+f(x) = sqrt(x - 1)/(x + 5)
+
+Restrictions:
+x - 1 ≥ 0, so x ≥ 1.
+x + 5 ≠ 0, so x ≠ -5.
+
+The intersection is [1, ∞), because -5 is already outside x ≥ 1.
+
+For
+h(x) = sqrt(x + 4)/(x - 3)
+
+Restrictions:
+x ≥ -4 and x ≠ 3.
+
+Domain:
+[-4, 3) ∪ (3, ∞)
+
+4. INTERVAL NOTATION
+
+[ ] includes an endpoint.
+( ) excludes an endpoint.
+Infinity always uses parentheses.
+
+x ≠ a is written:
+(-∞, a) ∪ (a, ∞)
+
+5. SET-BUILDER NOTATION
+
+Standard form:
+{x ∈ S | condition on x}
+
+Example:
+{x ∈ R | 1/(x - 1) > 0} = (1, ∞)
+
+The collected object is written before the vertical bar.
+The condition is written after it.
+
+6. DOMAIN VERSUS TRUTH SET
+
+Domain question:
+For which inputs is the expression defined?
+
+Truth-set question:
+For which inputs is the stated condition true?
+
+Example:
+g(x) = 1/(x - 1)
+Domain: R \ {1}.
+
+Condition:
+1/(x - 1) > 0
+Truth set: (1, ∞).
+
+7. SQUARES AND ABSOLUTE VALUE
+
+sqrt(x²) = |x|.
+
+Therefore:
+x² = 16
+|x| = 4
+x = 4 or x = -4
+Truth set: {-4, 4}.
+
+8. SCIENTIFIC VALIDITY LAYERS
+
+A model should be checked at four separate levels:
+1. mathematical validity;
+2. computational validity;
+3. biological validity;
+4. clinical or scientific actionability.
+
+A genomically filtered subset is not automatically a clinically actionable set.
+
+9. FINAL LOCKED RULES
+
+- Find dangerous structures before calculating.
+- Combine restrictions by intersection.
+- Distinguish the universe, domain, truth set, and filtered subset.
+- Use clean interval and set-builder notation.
+- State biological restrictions separately from raw algebraic restrictions.

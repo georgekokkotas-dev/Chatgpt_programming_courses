@@ -1,0 +1,133 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 4
+Part 2 — Final Exercises
+Theme: Review, Mini-Assessment, Portfolio, and Archive
+
+MANDATORY CORE
+
+Exercise 1 — Mathematical Object Classification
+Consider:
+P(t) = P0(1 + rt) - m
+
+Classify P, P(t), t, P0, r, m, 1 + rt, and =.
+Give the mathematical role of each object in one precise phrase.
+
+Exercise 2 — Expression, Equation, Identity, Formula, or Definition
+Classify and justify:
+a. 4x + 7
+b. 4x + 7 = 19
+c. (x + 1)^2 = x^2 + 2x + 1
+d. A = πr^2
+e. q := n_A/n
+
+Exercise 3 — Scientific Translation
+Translate:
+“The number of individuals carrying genotype AA is equal to the total population size multiplied by the frequency of genotype AA.”
+
+Requirements:
+1. define every symbol;
+2. write the equation;
+3. state units;
+4. state one assumption.
+
+Exercise 4 — Function Language and Domain
+Let:
+f(x) = (2x + 1)/(x - 3)
+
+Answer:
+a. input variable;
+b. output;
+c. excluded domain value;
+d. domain in set notation;
+e. classification of f(4);
+f. evaluation and interpretation of f(4).
+
+RECOMMENDED
+
+Exercise 5 — Ambiguous Notation Repair
+A researcher writes:
+G = frN
+without definitions.
+
+Identify at least five ambiguities, then rewrite the model as a notation block including quantity definitions, units, domain, parameter roles, and one assumption. Preserve the algebraic structure unless necessary.
+
+Exercise 6 — Legal and Illegal Transformations
+State whether each is legal. If not, identify the exact error and state any required condition.
+
+a. 3(x + 2) = 3x + 6
+b. (x + 2)/x = 1 + 2
+c. 2x + 5 = 11 ⇒ 2x = 6
+d. a(b + c) = ab + ac
+e. x^2 = 9 ⇒ x = 3
+f. ab/a = b
+
+Exercise 7 — Mathematical Statement Versus Programming Assignment
+Explain the conceptual difference between mathematical x = 5 and Python x = 5.
+Write the assignment in R and Julia.
+State whether x == 5 is valid Python and what it returns after x = 5.
+
+Exercise 8 — Function Implementation in Three Languages
+Implement:
+h(t) = h0 e^(-kt)
+for h0 = 100, k = 0.2, t = 5.
+
+Submit:
+1. formula;
+2. plain-language algorithm;
+3. Python, R, and Julia code;
+4. expected output;
+5. one likely syntax error in each language.
+
+STRETCH
+
+Exercise 9 — Symbol Roles Depend on Context
+Compare x in:
+a. x + 2
+b. x = 2
+c. f(x) = x + 2
+
+Discuss whether x is necessarily an unknown, variable, parameter, input, or constant.
+
+Exercise 10 — Scientific Critique of a Biological Model
+Consider:
+N(t) = N0 + bt - dt
+
+Critique:
+1. whether b and d are numbers, functions, or rates;
+2. required units;
+3. dimensional compatibility;
+4. births versus birth rate;
+5. one improved model;
+6. one assumption;
+7. one limitation.
+
+Exercise 11 — Mini Proof-Literacy Task
+Prove:
+If x and y are even integers, then x + y is even.
+
+Include the definition of even, integers m and n, symbolic substitution, and a final conclusion.
+
+RESEARCH INTEGRATION
+
+Exercise 12 — Genomic Model Notation Audit
+Consider:
+dN_gi/dt = r_dem (Σ_k f_k W_k) N (1 - N/K(t))
+
+Define or question N_gi, t, r_dem, f_k, W_k, k, N, K(t), the summation, and units on both sides.
+Identify at least three dimensional or conceptual problems. Diagnose without repairing.
+
+Exercise 13 — Publication-Style Mathematical Description
+Write a compact publication-style description of:
+G(t) = G0(1 + rt)
+
+Include exactly:
+1. model equation;
+2. symbol definitions;
+3. domain;
+4. units;
+5. assumptions;
+6. interpretation.
+
+Then add minimal implementation pseudocode and one numerical validation case. Clearly label all simulated values as illustrative.
+
+END OF EXERCISES

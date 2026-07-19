@@ -1,0 +1,28 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 3
+Part 3 — Final Scripts
+
+No standalone executable script was submitted in this mathematics session.
+The final corrected Python validity-condition extract is preserved below.
+
+```python
+# sqrt(x - 4) is valid over the real numbers
+valid_sqrt_shift = x >= 4
+
+# 1 / (x + 2) is valid
+valid_denominator = x != -2
+
+# sqrt(x + 3) / (x - 1) is valid
+valid_combined = x >= -3 and x != 1
+
+# x belongs to [2, 10)
+in_interval = 2 <= x < 10
+
+# x lies outside the forbidden value 0
+outside_zero = x != 0
+
+# 1 / sqrt(x - 2) is valid
+valid_root_denominator = x > 2
+```
+
+Validity checks should be performed before calculation because invalid inputs can create mathematical nonsense, runtime errors, or scientifically invalid output.

@@ -1,0 +1,92 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 2
+Part 1 — Final Theory
+Topic: Mathematical Objects and Equality Discipline
+
+1. OBJECT CLASSIFICATION
+
+Expression:
+x + 5
+
+Equation or condition:
+x + 5 = 12
+
+Implication:
+x > 4 ⇒ x > 1
+
+Equivalence:
+x + 2 = 7 ⇔ x = 5
+
+Membership condition:
+x ∈ R
+
+Programming command:
+x = 7 in Python assigns a value.
+x == 7 in Python tests equality.
+
+2. EQUALITY, IMPLICATION, AND EQUIVALENCE
+
+A = B asserts equality.
+P ⇒ Q asserts one-way logical consequence.
+P ⇔ Q asserts that both P ⇒ Q and Q ⇒ P are true.
+
+Equivalence cannot repair a false implication.
+For example:
+x > 2 ⇒ x > 5 is false.
+x > 2 ⇔ x > 5 is also false.
+The counterexample x = 3 makes the first condition true and the second false.
+
+3. REVERSIBLE TRANSFORMATIONS
+
+A transformation may be joined by ⇔ only when it preserves exactly the same solution set in both directions.
+
+Example:
+x + 3 = 10 ⇔ x = 7
+
+Example:
+3x + 2 = 17 ⇔ 3x = 15 ⇔ x = 5
+
+Adding or subtracting the same quantity on both sides is reversible.
+Multiplying or dividing both sides by a known nonzero constant is reversible.
+
+4. PROOF DIRECTION
+
+To prove P ⇒ Q:
+1. assume P;
+2. use legal definitions or transformations;
+3. derive Q;
+4. state the conclusion.
+
+Do not start from Q and solve backward unless the argument explicitly proves equivalence.
+
+5. FUNCTION DECOMPOSITION
+
+For
+f: R → R,  f(x) = 3x + 2
+
+f: R → R states the domain and codomain.
+f(x) = 3x + 2 states the function rule.
+f(4) is the value at input 4.
+f(4) = 14.
+The corresponding graph point is (4, 14).
+
+6. DOMAIN RESTRICTIONS
+
+Restrictions are applied to the inner expression.
+
+sqrt(x - 2) requires:
+x - 2 ≥ 0
+therefore x ≥ 2.
+
+1/(x + 5) requires:
+x + 5 ≠ 0
+therefore x ≠ -5.
+
+7. FINAL LOCKED RULES
+
+- ⇔ is valid only when both directions are true.
+- A counterexample destroys a universal claim.
+- Proofs of P ⇒ Q begin from P.
+- Check the inner expression when determining a domain.
+- Separate domain/codomain, rule, evaluated value, and graph point.
+- In Python, = assigns and == compares.

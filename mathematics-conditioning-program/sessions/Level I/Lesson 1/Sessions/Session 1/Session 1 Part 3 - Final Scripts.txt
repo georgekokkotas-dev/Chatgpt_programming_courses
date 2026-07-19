@@ -1,0 +1,24 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 1
+Part 3 — Final Scripts
+
+No standalone executable script was submitted in this mathematics session.
+The final corrected Python command extract is preserved below.
+
+```python
+x = 7
+
+condition = x > 3
+is_three = x == 3
+is_nonzero = x != 0
+
+print(condition)
+print(is_three)
+print(is_nonzero)
+```
+
+Programming rules locked in this session:
+- `=` assigns in Python.
+- `==` tests equality.
+- `!=` tests inequality.
+- A comparison returns a Boolean value.

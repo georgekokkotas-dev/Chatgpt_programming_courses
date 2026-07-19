@@ -1,0 +1,184 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 4
+Part 1 — Final Theory
+Topic: Mathematical Language Review, Mini-Assessment, Portfolio, and Archive
+
+SESSION PURPOSE
+
+This session closes Lesson 1 by consolidating the ability to:
+- identify mathematical objects correctly;
+- translate between words and symbols;
+- distinguish expressions, equations, identities, formulas, functions, definitions, and statements;
+- define symbols before using them;
+- interpret notation inside biological and computational models;
+- communicate mathematics in a form suitable for scientific work.
+
+1. MATHEMATICAL OBJECTS
+
+A mathematical object is something discussed or manipulated.
+Examples:
+x
+5
+{1, 2, 3}
+f
+dN/dt
+
+2. EXPRESSION
+
+An expression is a meaningful combination of symbols that does not make a complete claim by itself.
+Example:
+3x + 2
+
+3. EQUATION
+
+An equation asserts that two expressions are equal.
+Example:
+3x + 2 = 11
+
+4. IDENTITY
+
+An identity is an equality that holds for every allowed value in its domain.
+Example:
+(a + b)^2 = a^2 + 2ab + b^2
+
+5. FORMULA
+
+A formula states a reusable relationship between quantities.
+Example:
+A = πr^2
+
+6. FUNCTION
+
+A function assigns exactly one output to each permitted input.
+
+Example:
+f: R → R
+f(x) = 2x + 1
+
+f is the function name.
+x is the input variable.
+f(x) is the output or dependent quantity.
+f(4) is the value of the function at input 4.
+
+7. SYMBOL ROLES
+
+Consider:
+N(t) = N0 e^(rt)
+
+Possible roles:
+t: independent variable;
+N(t): dependent variable;
+N0: initial-value parameter;
+r: growth-rate parameter;
+e: mathematical constant.
+
+A symbol's role depends on its definition and context, not merely its letter.
+
+8. MATHEMATICS AND PROGRAMMING
+
+Mathematics:
+x = 4 normally asserts equality.
+
+Python:
+x = 4 assigns the value 4 to the name x.
+x == 4 tests equality.
+
+9. WORKED MODEL
+
+Consider:
+G(t) = G0(1 + rt)
+
+Definitions:
+G: function name;
+t: independent variable;
+G(t): output;
+G0: initial-value parameter;
+r: rate parameter;
+1 + rt: algebraic expression.
+
+For
+G0 = 2,
+r = 0.05,
+t = 4,
+
+G(4) = 2(1 + 0.05·4)
+G(4) = 2.4
+
+Interpretation:
+Under this simplified model, the genetic-influence score rises from 2 to 2.4 after four time units.
+This interpretation is conditional on the model assumptions and is not biological proof.
+
+10. SCIENTIFIC COMMUNICATION
+
+A usable mathematical model should define:
+- each quantity;
+- domain;
+- units;
+- parameter roles;
+- assumptions;
+- intended interpretation;
+- limitations.
+
+Example:
+N(t): population size at time t;
+t ≥ 0;
+t measured in years;
+N measured in individuals;
+r measured per year.
+
+11. PROGRAMMING PREPARATION
+
+Pseudocode:
+SET G0
+SET r
+SET t
+G = G0 * (1 + r * t)
+PRINT G
+
+Python:
+G0 = 2.0
+r = 0.05
+t = 4.0
+G = G0 * (1 + r * t)
+print(G)
+
+R:
+G0 <- 2.0
+r <- 0.05
+t <- 4.0
+G <- G0 * (1 + r * t)
+print(G)
+
+Julia:
+G0 = 2.0
+r = 0.05
+t = 4.0
+G = G0 * (1 + r * t)
+println(G)
+
+Expected output:
+2.4
+
+12. RESEARCH NOTATION AUDIT
+
+For a model such as
+
+dN_gi/dt = r_dem (Σ_k f_k W_k) N (1 - N/K(t))
+
+one must define:
+- N_gi;
+- t;
+- r_dem;
+- f_k;
+- W_k;
+- index k;
+- N;
+- K(t);
+- the summation universe;
+- units on both sides.
+
+One must also state whether frequencies and fitness terms depend on time and whether the model is deterministic or stochastic.
+
+FINAL LOCK-IN
+
+A symbol has no scientifically useful meaning until its role, domain, units, and context are sufficiently defined.

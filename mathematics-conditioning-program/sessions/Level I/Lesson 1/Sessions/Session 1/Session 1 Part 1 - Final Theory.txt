@@ -1,0 +1,77 @@
+MATHEMATICS CONDITIONING PROGRAM (MCP)
+Level I — Lesson 1 — Session 1
+Part 1 — Final Theory
+Topic: Mathematical Statements, Symbols, and Meaning
+
+1. MATHEMATICAL OBJECTS
+
+A mathematical expression combines symbols but does not assert a complete claim.
+Example: x + 3
+
+A statement has a definite truth value in its stated context.
+Example: 7 > 2
+
+A predicate or open formula contains a free variable and becomes true or false only after the variable is fixed or quantified.
+Examples:
+x + 3 = 10
+x ∈ R
+
+2. IMPLICATION
+
+P ⇒ Q means: whenever P is true, Q must also be true.
+An implication is false only when P is true and Q is false.
+It is not a symbol for uncertainty.
+
+Example:
+x > 5 ⇒ x > 3 is true over R.
+
+The converse reverses the direction:
+Q ⇒ P
+A true implication does not guarantee that its converse is true.
+
+3. FUNCTION LANGUAGE
+
+For
+f: R → R,  f(x) = 2x - 1
+
+f is the function.
+x is the input variable.
+f(x) is the output expression or function value at input x.
+f(3) means evaluate the rule at x = 3.
+
+f(3) = 2·3 - 1 = 5
+The corresponding graph point is (3, 5).
+
+4. DOMAINS
+
+A real-valued expression is valid only for allowed inputs.
+
+1/x requires x ≠ 0.
+sqrt(x) requires x ≥ 0.
+ln(x) requires x > 0.
+
+5. SET MEMBERSHIP
+
+x ∈ A means that the element x belongs to set A.
+x ∉ A means that x does not belong to A.
+
+6. MATHEMATICS AND PROGRAMMING
+
+Mathematics:
+x = 7 asserts equality or states a condition.
+
+Python:
+x = 7 assigns the value 7 to the variable name x.
+x == 7 tests equality.
+x != 0 tests inequality.
+
+A Boolean result can be stored directly:
+condition = x > 3
+
+7. FINAL LOCKED RULES
+
+- A free-variable formula is normally a predicate unless the variable is fixed or quantified.
+- An implication is a truth-valued logical claim, not a guess.
+- A function name, function rule, function value, and graph point are different objects.
+- Domain restrictions must be stated before evaluation.
+- Mathematical equality and programming assignment must remain context-separated.

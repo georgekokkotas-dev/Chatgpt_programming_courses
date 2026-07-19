@@ -1,22 +1,27 @@
 # MCP — Level I, Lesson 1
 
 **Lesson title:** Mathematical Statements, Symbols, and Meaning  
-**Reevaluation scope:** Sessions 1–3, as explicitly requested  
-**Mandatory Exercise Mastery:** **80%**  
+**Reevaluation scope:** Sessions 1–4  
+**Mandatory Exercise Mastery:** **79%**  
 **Overall Exercise Mastery:** **76%**  
-**Submitted Exercises:** **27/39**  
-**Overall Energy/Fatigue Factor:** **E: 4.3/5 · F: 1.3/5**  
-**Overall Lesson grade for the reevaluated scope:** **76/100**
+**Submitted Exercises:** **36/52**  
+**Overall Energy/Fatigue Factor:** **E: 4.5/5 · F: 1.0/5**  
+**Overall Lesson grade:** **76/100**
 
 ## Lesson Theory Summary
 
-The reevaluated sessions developed mathematical language, statements and predicates, implication and equivalence, functions, domains, truth sets, interval and set-builder notation, legal algebraic transformation, proof direction, programming comparisons, biological model restrictions, and genomic filtering logic.
+Lesson 1 developed mathematical language, statements and predicates, implication and equivalence, functions, domains, truth sets, interval and set-builder notation, legal algebraic transformation, proof direction, programming comparisons, scientific units and dimensions, biological model restrictions, genomic filtering logic, and publication-style mathematical interpretation.
+
+The central lesson principle was:
+
+> A symbol has no scientifically useful meaning until its role, domain, units, and context are sufficiently defined.
 
 ## Lesson Exercises Summary
 
-- **Session 1:** 8/13 submitted; emphasis on statements, implications, symbol translation, functions, domains, Python comparisons, and genomic classification logic.
-- **Session 2:** 13/13 submitted; emphasis on equality, equivalence, legal transformations, proofs, shifted domains, counterexamples, programming equality, and clinical-genetics logic.
-- **Session 3:** 6/13 submitted; emphasis on truth sets, domains, dangerous structures, combined restrictions, biological validity, and genomic filtering.
+- **Session 1:** 8/13 submitted; statements, implications, symbol translation, functions, domains, Python comparisons, and genomic classification logic.
+- **Session 2:** 13/13 submitted; equality, equivalence, legal transformations, proofs, shifted domains, counterexamples, programming equality, and clinical-genetics logic.
+- **Session 3:** 6/13 submitted; truth sets, domains, dangerous structures, combined restrictions, biological validity, and genomic filtering.
+- **Session 4:** 9/13 submitted; mathematical-object review, scientific translation, notation repair, legal transformations, multilingual implementation, and publication-style model description.
 
 Omitted exercises are recorded in the submission totals but do not enter either mastery denominator.
 
@@ -51,6 +56,15 @@ Omitted exercises are recorded in the submission totals but do not enter either 
 | S3-M4 — Truth Set vs Domain | 90% | Final solutions and domains were correct; set-builder notation remained redundant. |
 | S3-RI1 — Biological Validity Conditions | 78% | Scientific intuition was strong; algebraic and biological restrictions were mixed and `N` was over-restricted. |
 | S3-RI2 — Genomic Filtering | 95% | The filtering logic and actionability warning were correct, with only minor wording imprecision. |
+| S4-M1 — Mathematical Object Classification | 65% | Broad roles were recognized, but function, output, variable, parameter, and constant terminology was repeatedly mixed. |
+| S4-M2 — Expression, Equation, Identity, Formula, or Definition | 95% | All five classifications were correct and well justified, with only minor descriptive imprecision. |
+| S4-M3 — Scientific Translation | 60% | The equation and symbols were correct, but units, domain, and the requested assumption were not handled adequately. |
+| S4-M4 — Function Language and Domain | 82% | Domain and evaluation were correct; `f(4)` was misclassified as the function rather than its value. |
+| S4-R1 — Ambiguous Notation Repair | 60% | Strong critique of ambiguity, but the required formal notation block, units, domain, roles, and assumption were incomplete. |
+| S4-R2 — Legal and Illegal Transformations | 85% | Most judgements were correct; the non-zero condition for cancellation was omitted. |
+| S4-R3 — Mathematical Statement Versus Programming Assignment | 98% | Mathematical equality, assignment, comparison, and R/Julia assignment were distinguished correctly. |
+| S4-R4 — Function Implementation in Three Languages | 70% | Python/R logic and output were mostly correct, but Python syntax was incomplete and Julia was omitted. |
+| S4-RI2 — Publication-Style Mathematical Description | 65% | Scientific interpretation was thoughtful, but the domain and units were vague, the pseudocode changed the formula, and numerical validation was absent. |
 
 ## Major Breakthroughs
 
@@ -59,6 +73,9 @@ Omitted exercises are recorded in the submission totals but do not enter either 
 - Correct handling of square-root and denominator restrictions after correction.
 - Clear distinction between mathematical equality and Python assignment/comparison.
 - Strong scientific instinct against treating mathematical validity as biological or clinical proof.
+- Consolidated classification of expressions, equations, identities, formulas, and definitions.
+- Learned that symbols require roles, domains, units, assumptions, and scientific context.
+- Demonstrated the ability to critique ambiguous biological notation rather than blindly calculate with it.
 - Major Session 3 result: six submitted exercises demonstrated 90% mastery even though seven assigned exercises were omitted.
 
 ## Major Mistakes
@@ -67,8 +84,11 @@ Omitted exercises are recorded in the submission totals but do not enter either 
 - Equivalence was sometimes used as a repair symbol for false implications.
 - Proof direction was reversed in a dedicated proof exercise.
 - Shifted domain restrictions and interval endpoints caused repeated errors.
-- Function rule, value, domain, and codomain were sometimes blended.
+- Function rule, value, domain, codomain, and parameter roles were sometimes blended.
 - Mathematical restrictions and biological modelling assumptions were occasionally mixed.
+- Dimensionless proportions were assigned artificial physical units.
+- Required implementation components were sometimes omitted even when the central algorithm was understood.
+- Publication-style pseudocode altered the mathematical formula it was supposed to implement.
 
 ## Major Corrections
 
@@ -78,12 +98,17 @@ Omitted exercises are recorded in the submission totals but do not enter either 
 - `sqrt(A)` requires `A≥0`; `1/sqrt(A)` requires `A>0`; `1/A` requires `A≠0`.
 - `sqrt(x²)=|x|`.
 - Clean set-builder notation is `{x ∈ S | condition}`.
+- `f` names the function, while `f(a)` is its value at a specific input.
+- Frequencies and proportions are dimensionless.
+- Cancellation requires a non-zero denominator.
+- An implementation must preserve the mathematical operations and structure of the original model.
 - Mastery and submission coverage are separate quantities.
 
 ## Comments
 
-- **Mandatory Exercise Mastery calculation:** the 12 submitted Mandatory exercises total `958/1200 = 79.83%`, rounded to **80%**.
-- **Overall Exercise Mastery calculation:** the 27 submitted exercises total `2063/2700 = 76.41%`, rounded to **76%**.
-- **Overall Energy/Fatigue Factor:** arithmetic mean across Sessions 1–3: `E=(4+4+5)/3=4.33`, `F=(1+2+1)/3=1.33`, reported as **E: 4.3/5 · F: 1.3/5**.
-- Session 4 is intentionally excluded from this reevaluation because the requested scope named Sessions 1, 2, and 3. Its existing README and locked result remain unchanged.
+- **Mandatory Exercise Mastery calculation:** the 16 submitted Mandatory exercises total `1260/1600 = 78.75%`, rounded to **79%**.
+- **Overall Exercise Mastery calculation:** the 36 submitted exercises total `2743/3600 = 76.19%`, rounded to **76%**.
+- **Submitted Exercises:** `8 + 13 + 6 + 9 = 36` submitted out of `4 × 13 = 52` assigned exercises.
+- **Overall Energy/Fatigue Factor:** arithmetic mean across Sessions 1–4: `E=(4+4+5+5)/4=4.50`, `F=(1+2+1+0)/4=1.00`, reported as **E: 4.5/5 · F: 1.0/5**.
+- Session 4’s earlier holistic `90/100` result remains in its historical Part 3 report, but the submitted-exercise reevaluation is **76/100**.
 - A skipped exercise is not a failed exercise. It lowers submission coverage only; it does not enter the mastery average.

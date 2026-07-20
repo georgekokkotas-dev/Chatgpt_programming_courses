@@ -1,0 +1,402 @@
+CCP — Level I → Lesson I.2 → Session I.2.1
+Part 2 — Adaptive Exercise Set
+
+Mode: B+ — Normal Conditioning
+Primary track: Python
+Secondary track: Windows CMD
+Operational layer: WSL Ubuntu
+Total exercises: 13
+
+Do not submit model answers. Submit your own commands, reasoning, pseudocode, code, outputs, and errors encountered.
+
+MANDATORY CORE
+
+Exercise 1 — Path Classification Table
+Active block: Files, Paths and Directories
+Track: Universal filesystem logic
+Difficulty: Moderate
+Type: L — Learning/Explanation
+Status: Mandatory Core
+Language/environment: Plain text
+
+Classify each path as absolute Windows, absolute Linux/WSL, relative, parent-relative, or current-directory-relative:
+C:\Users\George\Research\BRCA2.fasta - Absolute Windows. - File, Windows Platform, No dependance, BRCA2.fasta, it's the raw sequence file for the BRCA2 gene.
+/home/george/research/BRCA2.fasta - Absolute Linux. - File, WSL Ubuntu Platform, No dependance, BRCA2.fasta, it's the raw sequence file for the BRCA2 gene
+data/BRCA2.fasta - CD Relative for both systems - File, WSL Ubuntu Platform, Dependance on CD, BRCA2.fasta, it's the raw sequence file for the BRCA2 gene.
+../data/BRCA2.fasta - Parent-relative for both. - File, WSL Ubuntu Platform, Dependence on the CD, BRCA2.fasta, it's the raw sequence file for the BRCA2 gene.
+./scripts/inspect_path.py - Current directory-relative for both - File, WSL Ubuntu Platform, Dependence on CD, inspect_path.py, Python script for file path inspection.
+/mnt/c/Users/George/Desktop/BRCA2.fasta - Absolute Linux. - WSL Ubuntu Platform, No Dependence, BRCA2.fasta, it's the raw sequence file for the BRCA2 gene.
+
+For every path state category, environment, dependence on current working directory, final name, and explanation.
+
+Exercise 2 — Working-Directory Trace
+Active block: Command-Line Thinking
+Track: Ubuntu CLI
+Difficulty: Post-Moderate
+Type: D — Drill/Trace
+Status: Mandatory Core
+Language/environment: WSL Ubuntu
+
+Assume:
+/home/george/ccp_path_lab/
+├── data/
+│   └── test_sequence.fasta
+├── results/
+└── scripts/
+    └── inspect_path.py
+
+Start in /home/george and trace:
+cd /home/george/ccp_path_lab
+Before: /home/george
+After: 
+***data/*** EXISTS
+***data/test_sequence.fasta*** EXISTS
+results/
+scripts/
+
+cd ../ccp_path_lab/scripts
+Before: /home/george/ccp_path_lab
+After:
+No directory
+data/ doesn't exist here
+data/test_sequence.fasta doesn't exist here
+data is accessed by ../data
+test_sequence.fasta is accessed by ../data/test_sequence.fasta
+
+cd ../ccp_path_lab/data
+Before: /home/george/ccp_path_lab
+After:
+No directory
+data/ doesn't exist here
+data is accessed by ../data
+***data/test_sequence.fasta*** EXISTS
+
+cd results
+cd ../results
+cd ../ccp_path_lab/scripts
+Before: /home/george/ccp_path_lab
+After:
+No directory
+data/ doesn't exist here
+data/test_sequence.fasta doesn't exist here
+data is accessed by ../data
+test_sequence.fasta is accessed by ../data/test_sequence.fasta
+
+But since the exercise asks for tracing the the MOVEMENT of the terminal’s current location (sic), I decided to give both answers:
+
+Assume:
+/home/george/ccp_path_lab/
+├── data/
+│   └── test_sequence.fasta
+├── results/
+└── scripts/
+    └── inspect_path.py
+
+Start in /home/george and trace:
+
+cd ccp_path_lab
+Before: We were at /home/george
+After: We are at /home/george/ccp_path_lab
+data/test_sequence.fasta exists
+
+cd scripts
+Before: We were at /home/george/ccp_path_lab
+After: We are at /home/george/ccp_path_lab/scripts
+data/test_sequence.fasta doesn't exist
+Can be accessed by /home/george/ccp_path_lab/data/test_sequence.fasta or ~/ccp_path_lab/data/test_sequence.fasta or ../data/test_sequence.fasta
+
+cd ..
+Before: We were at /home/george/ccp_path_lab/scripts
+After: We are at /home/george/ccp_path_lab
+data/test_sequence.fasta exists
+
+cd data
+Before: We were at /home/george/ccp_path_lab
+After: We are at /home/george/ccp_path_lab/data
+.../data/test_sequence.fasta exists
+Can be accessed by nano test_sequence.fasta
+
+cd ..
+Before: We were at /home/george/ccp_path_lab/data
+After: We are at /home/george/ccp_path_lab
+data/test_sequence.fasta exists
+
+cd results
+Before: We were at /home/george/ccp_path_lab
+After: We are at /home/george/ccp_path_lab/results
+data/test_sequence.fasta doesn't exist
+Can be accessed by /home/george/ccp_path_lab/data/test_sequence.fasta or ~/ccp_path_lab/data/test_sequence.fasta or ../data/test_sequence.fasta
+
+cd ../scripts
+Before: We were at /home/george/ccp_path_lab/results
+After: /home/george/ccp_path_lab/scripts
+data/test_sequence.fasta doesn't exist
+Can be accessed by /home/george/ccp_path_lab/data/test_sequence.fasta or ~/ccp_path_lab/data/test_sequence.fasta or ../data/test_sequence.fasta
+
+For each step record command, directory before, directory after, whether ../data/test_sequence.fasta exists, whether data/test_sequence.fasta exists, and why.
+
+Exercise 3 — Path Inspector in Pseudocode
+Active block: Pseudocode
+Track: BASIC-style pseudocode
+Difficulty: Moderate
+Type: A — Application
+Status: Mandatory Core
+Language/environment: George’s established pseudocode notation
+
+Write complete pseudocode that asks for a path, stores it, 
+prints current working directory, 
+prints name/extension/parent, 
+checks existence, 
+distinguishes file from directory, 
+prints an error if missing, 
+and opens nothing unless the path exists and is a file.
+
+START
+CLS
+PRINT CWD $prints current working directory$
+PRINT "TYPE THE FILE'S DIRECTORY: " 
+	INPUT ITEM_TYPE = DIR $asks for a path$
+
+SET FILE_PATH = INPUT DIRECTORY $stores it$
+
+IF $file_path.is_file()$
+	FILE_PATH ITEM_TYPE = FILE 
+	PRINT "IS FILE"
+	SET FILE_PATH = #FILE $ # means it is not just another variable, but it is... How should i say it? The status of the item. #DIRECTORY means it is a Directory, not just a variable. And #FILE means it's a FILE. Does R or Python have anything like this???$ 
+		ITEM_TYPE = FILE
+END IF
+IF $file_path.is_dir()$
+	FILE_PATH ITEM_TYPE = DIR 
+	PRINT "IS DIRECTORY"
+	SET FILE_PATH = #DIRECTORY
+		ITEM_TYPE = DIR 
+END IF
+
+IF
+	#FILE IN #DIRECTORY
+	CONTINUE
+ELSE
+	RAISE_ERROR
+	PRINT "NO SUCH FILE IN DIRECTORY"
+	GO TO LINE 40
+END IF
+
+IF NOT $checks existence and opens nothing unless the path exists and is a file
+	#FILE 
+		ITEM_TYPE = FILE
+	RAISE_ERROR 
+	PRINT "PATH IS NOT FILE"
+	GO TO LINE 40
+ELSE
+	OPEN READ #FILE
+END IF
+
+PRINT FILE_PATH %~~/~~.~~% $Prints name/extension/parent. I basically mean that, it should print the file, the extension and its parent directory. If i wanted the absolute directory, i'd write %.../~~.~~%$
+
+END
+
+Exercise 4 — Python Path Inspector
+Active block: Python Programming
+Track: Python
+Difficulty: Post-Moderate
+Type: A — Application/Project
+Status: Mandatory Core
+Language/environment: Python 3
+
+Write inspect_path.py. 
+It must import Path, 
+accept stripped input, 
+create a Path object, 
+print current working directory, 
+entered path, absolute path, name, stem, suffix, parent, 
+and report whether the path exists and is a file, directory, other object, or missing. 
+Do not open the file. 
+Submit one test run using data/test_sequence.fasta.
+
+Template:
+from pathlib import Path
+
+user_input = input("Enter a file or directory path: ").strip()
+file_path = Path(user_input)
+
+# Print metadata here.
+
+if file_path.exists():
+    # Classify the path here.
+    pass
+else:
+    # Print missing-path error here.
+    pass
+
+# It must import Path
+from pathlib import Path
+
+# Accept stripped input,
+user_input = input("Enter a file or directory path: ").strip()
+
+# create a Path object, 
+file_path = Path(user_input)
+
+# Print metadata here.
+# print current working directory, 
+print("Current Working Path: ", Path.cwd())
+
+# entered path, absolute path, name, stem, suffix, parent,
+print("Entered Path:", file_path) 
+print("Absolute Path:", file_path.resolve())
+print("Full name:", file_path.name)
+print("Stem:", file_path.stem)
+print("Suffix:", file_path.suffix)
+print("Parent Directory:", file_path.parent)
+
+# and report whether the path exists and is a file, directory, other object, or missing. 
+if file_path.exists():
+    print("The file exists in:", file_path.parent)
+    if file_path.is_file():
+        print("Path is file. File's name:", file_path.name)
+        pass
+    elif file_path.is_dir:
+        print("Path is not file, path is directory", file_path.resolve)
+    else:
+        print("Path is neither file nor directory")
+    pass
+else:
+    print("No file in path")
+    pass
+
+Enter a file or directory path: C:\Users\George\Desktop\CCP Lessons\l1_les1_s4\test_sequence.fasta
+Current Working Path:  C:\Users\George\AppData\Local\Programs\Microsoft VS Code
+Entered Path: C:\Users\George\Desktop\CCP Lessons\l1_les1_s4\test_sequence.fasta
+Absolute Path: C:\Users\George\Desktop\CCP Lessons\l1_les1_s4\test_sequence.fasta
+Full name: test_sequence.fasta
+Stem: test_sequence
+Suffix: .fasta
+Parent Directory: C:\Users\George\Desktop\CCP Lessons\l1_les1_s4
+The file exists in: C:\Users\George\Desktop\CCP Lessons\l1_les1_s4
+Path is file. File's name: test_sequence.fasta
+
+RECOMMENDED
+
+Exercise 5 — Ubuntu Project Creation
+Active block: Ubuntu CLI
+Track: WSL Ubuntu
+Difficulty: Easy
+Type: C — Command/Syntax
+Status: Recommended
+
+Create:
+ccp_path_lab/
+├── data/
+├── results/
+└── scripts/
+
+Enter the root, print working directory, list contents, create data/test_sequence.fasta and scripts/inspect_path.py, then list the complete structure. Submit commands and terminal output.
+
+Exercise 6 — Windows CMD Translation
+Active block: Windows CMD
+Track: Windows CMD
+Difficulty: Pre-Moderate
+Type: C — Command/Syntax
+Status: Recommended
+
+Translate this Ubuntu workflow into Windows CMD:
+mkdir -p ccp_path_lab/data ccp_path_lab/scripts
+cd ccp_path_lab
+pwd
+ls
+cd data
+cd ..
+
+Explain why CMD normally uses cd and dir rather than pwd and ls.
+
+Exercise 7 — Metadata Prediction
+Active block: Files, Paths and Directories
+Track: Python reasoning
+Difficulty: Moderate
+Type: D — Drill/Trace
+Status: Recommended
+
+Given:
+from pathlib import Path
+path = Path("../data/BRCA2.reference.fasta")
+
+Predict path.name, path.stem, path.suffix, and path.parent. Explain whether stem removes every suffix-like component, what .. means, whether existence is knowable from the string alone, and whether absolute location is knowable without the current working directory.
+
+Exercise 8 — Debug a Relative Path Failure
+Active block: Debugging
+Track: Python + Ubuntu CLI
+Difficulty: Post-Moderate
+Type: A — Application/Debugging
+Status: Recommended
+
+Script: /home/george/ccp_path_lab/scripts/inspect_path.py
+FASTA: /home/george/ccp_path_lab/data/test_sequence.fasta
+Current terminal: /home/george/ccp_path_lab/scripts
+Entered path: data/test_sequence.fasta
+
+Explain the actual attempted path, why it is wrong, the correct relative path, one valid absolute path, how Path.cwd() diagnoses it, and which Ubuntu commands verify the diagnosis.
+
+STRETCH
+
+Exercise 9 — Validate File Type Before Reading
+Active block: Python Programming
+Track: Python
+Difficulty: Hard
+Type: A — Application
+Status: Stretch
+
+Extend the inspector so it prints “Ready to read FASTA” only when the path exists, is a file, and has .fa or .fasta suffix case-insensitively. Otherwise print one specific message: Path does not exist; Path is not a file; Unsupported file extension. Do not read the file. Submit four tests.
+
+Exercise 10 — Script Directory Versus Working Directory
+Active block: Problem Decomposition
+Track: Python
+Difficulty: Very Hard
+Type: L — Learning/Explanation
+Status: Stretch
+
+Explain Path.cwd() versus Path(__file__).parent using:
+Script: /home/george/project/scripts/inspect_path.py
+Terminal working directory: /home/george/project
+
+State what each represents, the difference, one example, and the risk of confusing them.
+
+Exercise 11 — Cross-Environment Path Diagnosis
+Active block: Operating System Concepts
+Track: Windows + WSL
+Difficulty: Harder
+Type: A — Application/Debugging
+Status: Stretch
+
+Windows file:
+C:\Users\George\Desktop\Research Data\sample.fasta
+
+Attempted in WSL:
+cd C:\Users\George\Desktop\Research Data
+python3 inspect_path.py
+
+Diagnose all likely problems. Give the WSL equivalent directory, correct cd command, WSL absolute FASTA path, explanation of spaces, two safe quoting strategies, and why backslashes are not Linux separators.
+
+RESEARCH / APPLICATION INTEGRATION
+
+Exercise 12 — FASTA Intake Workflow
+Active block: Bioinformatics Computing
+Track: Pseudocode + Python architecture
+Difficulty: Hard
+Type: A — Research/Application
+Status: Research Integration
+
+Design the complete intake stage before CLEAVE(): path input, working-directory report, existence check, file-type check, suffix check, FASTA opening, header skipping, empty-line handling, sequence validation, reconstruction, length calculation, rejection/stopping rules, and handoff to CLEAVE(sequence). Do not implement CLEAVE(). Explain which failures stop the pipeline and which lines may be skipped safely.
+
+Exercise 13 — Git-Ready Project Architecture
+Active block: Project Architecture
+Track: Git/GitHub
+Difficulty: Post-Moderate
+Type: A — Research/Application
+Status: Research Integration
+
+Design a professional structure containing README.md, Python scripts, test FASTA data, results, documentation, exercise submission, correction report, mistake log, command gap log, and Git log. Give the directory tree, one-sentence purpose for every item, and exact commands for pwd, ls, git init, git status, git add, git commit, and final git status. Do not run git push.
+
+SUBMISSION RULES
+Mandatory Core: Exercises 1, 2, 3, 4.
+Recommended order: 1 → 2 → 3 → 4 → 7 → 8 → 5 → 6 → 9 → 10 → 11 → 12 → 13.
+Keep every exercise clearly labelled.

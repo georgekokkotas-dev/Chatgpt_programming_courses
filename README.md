@@ -4,7 +4,7 @@ This repository archives structured programming, computing, and mathematics-cond
 
 ## Current Courses
 
-- [Computing Conditioning Program (CCP) — Level I, Lesson 1](computing-conditioning-program/sessions/Level%20I/Lesson%201/README.md)
+- Computing Conditioning Program (CCP): [Level I, Lesson 1](computing-conditioning-program/sessions/Level%20I/Lesson%201/README.md) · [Level I, Lesson 2](computing-conditioning-program/sessions/Level%20I/Lesson%202/README.md)
 - Mathematics Conditioning Program (MCP): [Level I, Lesson 1](mathematics-conditioning-program/sessions/Level%20I/Lesson%201/README.md) · [Level I, Lesson 2](mathematics-conditioning-program/sessions/Level%20I/Lesson%202/README.md)
 
 ## Purpose

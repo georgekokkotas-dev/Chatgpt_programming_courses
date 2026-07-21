@@ -1,17 +1,17 @@
 # MCP — Level I · Lesson I.2 · Session I.2.3
 
-## Final Part 3 Report
+## Revised Final Part 3 Report
 
 **Student:** George Kokkotas  
 **Energy/Fatigue:** E4 / F2  
 **Theme:** Powers, Roots, Signs, Restrictions, and Final-Line Verification  
 **Status:** Passed and locked with recorded reinforcement needs
 
-## Final Metrics
+## Revised Final Metrics
 
 - Mandatory Core Completion: 4/4 = 100%
 - Exercise Coverage: 4/13 = 30.8%
-- Final Mastery: 71/100
+- Final Mastery: 74/100
 - Passing threshold: 65/100
 - Programming assessment: Not assessed
 - Recommended/Stretch/Research Integration: Not attempted due to time; not penalized in Completion
@@ -21,18 +21,33 @@
 - M1 — Power, Sign, Root, and Classification Audit: 20/25
 - M2 — Mixed Transformation with Restrictions: 18/25
 - M3 — First Illegal Line Diagnosis: 16/25
-- M4 — Scientific Magnitude and Domain Audit: 17/25
+- M4 — Scientific Magnitude and Domain Audit: 20/25
 
-**Total: 71/100**
+**Total: 74/100**
 
-## What Was Corrected Successfully
+## M4 Reassessment
 
-- M1c: external negative preserved; result -72.
-- M1e: 6² corrected to 36.
-- M1g: √98 recognized as irrational real rather than rational.
-- M1h: √(-36) corrected to 6i; final result 4i.
-- M2a and M2b: distribution repaired correctly.
-- M3E: 9.09 retained as the exact result and = used instead of ≈.
+The earlier score of 17/25 was too harsh.
+
+1. **Domain:** The prompt was ambiguous. George classified the supplied numerical values in Q, which is defensible for the instantiated values. The intended model-domain answer was R for the signed components and R_{≥0} for the magnitude, but this should receive only a small deduction because the wording did not clearly distinguish model domain from smallest-set membership.
+
+2. **Signed/non-negative:** George correctly identified g1 as negative and g2 as non-negative, but did not explicitly state that G is non-negative.
+
+3. **Dimensionless:** Correct.
+
+4. **Calculation:** Correct numerical calculation and exact result. One intermediate equality omitted the radical symbol, treated as a notation oversight.
+
+5. **Loss of the negative sign:** Substantively correct; the sign disappears during squaring.
+
+6. **Loss of direction/sign information:** Correct in substance.
+
+7. **Smallest number set:** Correct: the final value 1 belongs to N.
+
+8. **Exact versus approximate:** Correct use of =.
+
+9. **Scientific interpretation:** Incomplete. One vague sentence was supplied instead of the requested two-sentence interpretation.
+
+10. **Limitation:** A number of possible concerns were brainstormed, but no single clear and mathematically relevant limitation was stated.
 
 ## Remaining Issues
 
@@ -52,9 +67,9 @@ These are logged primarily as final-line or notation oversights rather than as p
 
 ### Incomplete components
 
-- M4 does not explicitly classify G as non-negative.
-- M4 item 9 does not provide the required two-sentence scientific interpretation.
-- M4 item 10 does not state one definite limitation.
+- M4 did not explicitly classify G as non-negative.
+- M4 item 9 did not provide the required two-sentence scientific interpretation.
+- M4 item 10 did not state one definite limitation.
 
 ### Prerequisite gaps
 
@@ -66,29 +81,9 @@ These are logged primarily as final-line or notation oversights rather than as p
 
 None recorded. Programming was not attempted and was not required for Mandatory Completion.
 
-## Mistake Log
-
-🟥 Mistake — Final arithmetic/sign lines were not consistently rechecked.  
-🟨 Cause — Correct concepts were followed by hurried numerical transcription.  
-🟦 Correct Rule — Independently verify the final operation and its sign.  
-🟩 Corrected Example — `36 - 8 = 28`, not 27 or 44.  
-🟪 Recurring Pattern — Final-line verification remains the main vulnerability.
-
-🟥 Mistake — Original denominator restrictions were attached to the wrong value.  
-🟨 Cause — Cancellation occurred before explicitly solving denominator = 0.  
-🟦 Correct Rule — Record the original denominator restriction before cancellation.  
-🟩 Corrected Example — `(m² + 3m)/m = m + 3, m ≠ 0`.  
-🟪 Recurring Pattern — Domain ledger is understood conceptually but not yet automatic.
-
-🟥 Mistake — Principal square root was confused with ± solutions.  
-🟨 Cause — Root evaluation and equation solving were treated as the same operation.  
-🟦 Correct Rule — `√a` is non-negative; `x² = a` may have two real solutions.  
-🟩 Corrected Example — `√64 = 8`, while `x² = 64` gives `x = ±8`.  
-🟪 Recurring Pattern — Principal-root notation requires continued reinforcement.
-
 ## Final Decision
 
-The session passes at **71/100**. The grade is reduced by the specific remaining errors above, not by unattempted optional work and not by invented penalties. Oversights are recorded separately from conceptual gaps, but they still affect this session because final-line verification was one of its explicit learning objectives.
+The revised session grade is **74/100**. The revision corrects an overly severe assessment of M4 while preserving deductions for the specific remaining mathematical errors, notation oversights, and incomplete requested components.
 
 ## Next Session
 
